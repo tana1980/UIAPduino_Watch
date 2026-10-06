@@ -1,0 +1,7 @@
+- date: 2026-10-06
+  kind: initial
+  intro_ja: まずは公式の手引きから。ブロックで学ぶ、音を作る——使い方の違う3つの入口を選びました。
+  resource_ids:
+    - official-v003
+    - tarosay-scratch3-uiapduino
+    - inajob-uiapduino-piano

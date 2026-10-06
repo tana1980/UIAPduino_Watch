@@ -1,0 +1,1622 @@
+- id: inajob-uiapduino-piano
+  title: UIAPduinoで作る3音ポリフォニック・ピアノ
+  url: https://github.com/inajob/uiapduino-piano
+  source: GitHub
+  author: inajob
+  region: Japan
+  language: ja
+  categories:
+    - GitHub
+    - Project
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: null
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: PWM音源で最大3音の和音を鳴らす電子ピアノ。配線表とPlatformIO構成があり、小さなマイコンで音を作りたい人に。
+  tags:
+    - GitHub
+    - Project
+  official: false
+  status: active
+  verification:
+    checked_url: https://github.com/inajob/uiapduino-piano
+    note: リポジトリの本文・READMEを確認。実機動作の追試は行っていません。
+    content_sha256: 40b80eb3fd402cdc7fbd7775275de91672eb58197991828c19abfca2334e389b
+- id: tarosay-scratch3-uiapduino
+  title: Scratch / XcratchからUIAPduinoを動かす
+  url: https://github.com/tarosay/scratch3-uiapduino
+  source: GitHub
+  author: tarosay
+  region: Japan
+  language: ja
+  categories:
+    - GitHub
+    - Education
+    - Tool
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: null
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: WebHIDを使うScratch拡張。Xcratch版とScratch Desktop版があり、ブロックによる電子工作や教室での導入に役立ちます。
+  tags:
+    - GitHub
+    - Education
+    - Tool
+  official: false
+  status: active
+  verification:
+    checked_url: https://github.com/tarosay/scratch3-uiapduino
+    note: リポジトリの本文・READMEを確認。実機動作の追試は行っていません。
+    content_sha256: 69e3ed8df31c844141799af2b80bc6475dc63e563e4e994f38b74482df07a062
+- id: tarosay-uiap-hid-web
+  title: UIAPduino WebHID Lab
+  url: https://github.com/tarosay/uiap-hid-web
+  source: GitHub
+  author: tarosay
+  region: Japan
+  language: ja
+  categories:
+    - GitHub
+    - Education
+    - Tool
+    - Documentation
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: null
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: ブラウザから基板を操作する練習ページ群。HID Consoleやブロック・Rubyの学習環境をまとめ、ブラウザで電子工作を始めたい人向け。
+  tags:
+    - GitHub
+    - Education
+    - Tool
+    - Documentation
+  official: false
+  status: active
+  verification:
+    checked_url: https://github.com/tarosay/uiap-hid-web
+    note: リポジトリの本文・READMEを確認。実機動作の追試は行っていません。
+    content_sha256: 718e5493a04d51f39967d35dde995f202bf62ff289a8dd07a9f2286849fddfd6
+- id: tarosay-urb-gallery
+  title: URBで作った作品を共有するギャラリー
+  url: https://github.com/tarosay/urb-gallery
+  source: GitHub
+  author: tarosay
+  region: Japan
+  language: ja
+  categories:
+    - GitHub
+    - Project
+    - Education
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: null
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: UIAPduino向けブロック作品を共有するコミュニティギャラリー。作品ファイルを追加するPRの手順もあり、教材や制作のヒントを探せます。
+  tags:
+    - GitHub
+    - Project
+    - Education
+  official: false
+  status: active
+  verification:
+    checked_url: https://github.com/tarosay/urb-gallery
+    note: リポジトリの本文・READMEを確認。実機動作の追試は行っていません。
+    content_sha256: f2c2d7e6e8a1d2be1af1348f5415949858023cad0b675dc3ba1595f4ea9f5be9
+- id: tarosay-uiapduino-workshop
+  title: マイコンC言語基礎講座の資料・スケッチ
+  url: https://github.com/tarosay/uiapduino-workshop
+  source: GitHub
+  author: tarosay
+  region: Japan
+  language: ja
+  categories:
+    - GitHub
+    - Education
+    - Event
+    - Tutorial
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: null
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: 2026年7月27日開催の講座資料。LチカからHID、配列、探索アルゴリズムまで、実機で学ぶC言語教材を探す講師・学習者に。
+  tags:
+    - GitHub
+    - Education
+    - Event
+    - Tutorial
+  official: false
+  status: active
+  verification:
+    checked_url: https://github.com/tarosay/uiapduino-workshop
+    note: リポジトリの本文・READMEを確認。実機動作の追試は行っていません。
+    content_sha256: 56915bc3a23ca701908a7d7144d6313c83b00c68f279007f8cc17d69d0753a86
+- id: taikiishii-uiapduino-workshop
+  title: 子ども向けUIAPduino体験ワークショップ
+  url: https://github.com/taikiishii/uiapduino-workshop
+  source: GitHub
+  author: taikiishii
+  region: Japan
+  language: ja
+  categories:
+    - GitHub
+    - Education
+    - Tutorial
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: null
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: 小学校高学年〜中学生向けのC++教材。LED、センサー、モーターへ段階的に進み、Web・スライド・印刷用の形式で利用できます。
+  tags:
+    - GitHub
+    - Education
+    - Tutorial
+  official: false
+  status: active
+  verification:
+    checked_url: https://github.com/taikiishii/uiapduino-workshop
+    note: リポジトリの本文・READMEを確認。実機動作の追試は行っていません。
+    content_sha256: 2297fbfd873371e5a0cec23829364044d067cae3d2d56a3105e9bd5a0ae4e449
+- id: tarosay-sdlog-uiapduino
+  title: OpenLog互換のmicroSD UARTデータロガー
+  url: https://github.com/tarosay/sdlog_uiapduino
+  source: GitHub
+  author: tarosay
+  region: Japan
+  language: ja
+  categories:
+    - GitHub
+    - Project
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: null
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: UARTで受信したデータをmicroSDへ記録するスケッチ。計測ログを残したい人に。元資料の3.3Vへの電源変更に関する注意を必ず確認してください。
+  tags:
+    - GitHub
+    - Project
+  official: false
+  status: active
+  verification:
+    checked_url: https://github.com/tarosay/sdlog_uiapduino
+    note: リポジトリの本文・READMEを確認。実機動作の追試は行っていません。
+    content_sha256: 0babf79d1919de95e786adf0a0a9ee9f766ed486f05f2bbe682dc18cec8eb62e
+- id: tarosay-board-manager-files
+  title: UIAPduino HIDコミュニティ・ボードパッケージ
+  url: https://github.com/tarosay/board_manager_files
+  source: GitHub
+  author: tarosay
+  region: Japan
+  language: ja
+  categories:
+    - GitHub
+    - Tool
+    - Documentation
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: null
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: Arduino IDE向けのコミュニティHIDボードパッケージ。WebHID、キーボード・マウス、UARTなどの選択肢と導入手順を確認できます。
+  tags:
+    - GitHub
+    - Tool
+    - Documentation
+  official: false
+  status: active
+  verification:
+    checked_url: https://github.com/tarosay/board_manager_files
+    note: リポジトリの本文・READMEを確認。実機動作の追試は行っていません。
+    content_sha256: e0cf033172bf3eae712fe7ce76083cf5daf3c511fd885a81711892272c55b4ab
+- id: shioyukinko-pyuiapduino
+  title: PythonからUSB-HID経由でUIAPduinoを操作
+  url: https://github.com/shioyukinko/pyUIAPduino
+  source: GitHub
+  author: shioyukinko
+  region: Global
+  language: en
+  categories:
+    - GitHub
+    - Library
+    - Tool
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: null
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: USB-HIDでGPIO、キーボード、マウスなどを操作するPythonホストライブラリ。Scratch拡張用スケッチとの互換性を説明しています。
+  tags:
+    - GitHub
+    - Library
+    - Tool
+  official: false
+  status: active
+  verification:
+    checked_url: https://github.com/shioyukinko/pyUIAPduino
+    note: リポジトリの本文・READMEを確認。実機動作の追試は行っていません。
+    content_sha256: 294cb0cb7daaf1563424f75300ba579d294be50fae5b4fe51b241bd7ee129180
+- id: 53175ddd-uiapduino-breakout-board
+  title: ブレッドボード用UIAPduinoブレイクアウトボード
+  url: https://github.com/53175ddd/UIAPduino-breakout-board
+  source: GitHub
+  author: 53175ddd
+  region: Japan
+  language: ja
+  categories:
+    - GitHub
+    - Hardware
+    - Project
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: null
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: UIAPduinoをブレッドボードで試すための拡張基板。部品表と基板データの入口があり、配線や基板設計を検討する人向け。
+  tags:
+    - GitHub
+    - Hardware
+    - Project
+  official: false
+  status: active
+  verification:
+    checked_url: https://github.com/53175ddd/UIAPduino-breakout-board
+    note: リポジトリの本文・READMEを確認。実機動作の追試は行っていません。
+    content_sha256: b16faa55d4aaf041306a910a3e57b37794108a9fc05e34bdc1627259c23ac84a
+- id: gangi-man-microgame-on-uiapduino
+  title: フリスクサイズの携帯ゲームを作る
+  url: https://github.com/gangi-man/MicroGame-on-UIAPduino
+  source: GitHub
+  author: gangi-man
+  region: Japan
+  language: ja
+  categories:
+    - GitHub
+    - Project
+    - Tutorial
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: null
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: OLEDと6個のボタンを使う携帯ゲームの制作例。Arduino IDEでのビルド手順、回路図、操作方法を掲載。開発中のプロジェクトです。
+  tags:
+    - GitHub
+    - Project
+    - Tutorial
+  official: false
+  status: active
+  verification:
+    checked_url: https://github.com/gangi-man/MicroGame-on-UIAPduino
+    note: リポジトリの本文・READMEを確認。実機動作の追試は行っていません。
+    content_sha256: 2aeb518824238186917752496bc5dac8251511126521d6a10fa896a52b86192e
+- id: gangi-man-leverless-on-uiapduino
+  title: UIAPduinoのレバーレスUSBゲームコントローラ
+  url: https://github.com/gangi-man/leverless-on-UIAPduino
+  source: GitHub
+  author: gangi-man
+  region: Global
+  language: en
+  categories:
+    - GitHub
+    - Project
+    - Hardware
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: null
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: rv003usbとch32funを使うUSB HIDコントローラ。回路、筐体モデル、Windowsでの入力確認手順があり、入力デバイス制作の参考に。
+  tags:
+    - GitHub
+    - Project
+    - Hardware
+  official: false
+  status: active
+  verification:
+    checked_url: https://github.com/gangi-man/leverless-on-UIAPduino
+    note: リポジトリの本文・READMEを確認。実機動作の追試は行っていません。
+    content_sha256: cdbf9e7febff02a0406bb5b6c57e68986424340af7461b991c30e2c871dd4b3b
+- id: iharuya-uiapduino-mac
+  title: Macで始めるch32fun開発環境
+  url: https://github.com/iharuya/uiapduino-mac
+  source: GitHub
+  author: iharuya
+  region: Japan
+  language: ja
+  categories:
+    - GitHub
+    - Tool
+    - Tutorial
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: null
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: Apple Silicon Macでch32funとMakefileを使う最小環境。ツール導入、LEDの配線、ビルドと書き込みの手順を確認できます。
+  tags:
+    - GitHub
+    - Tool
+    - Tutorial
+  official: false
+  status: active
+  verification:
+    checked_url: https://github.com/iharuya/uiapduino-mac
+    note: リポジトリの本文・READMEを確認。実機動作の追試は行っていません。
+    content_sha256: 5f58ccbd704756bd00a7f62c87820c4acf2d0d778d5234f17fe789ef3956b229
+- id: sapphire-lilith-uiapduino-demo-swest28
+  title: SWEST28向けMac開発環境・デモ
+  url: https://github.com/Sapphire-Lilith/UIAPduino_demo_SWEST28
+  source: GitHub
+  author: Sapphire-Lilith
+  region: Japan
+  language: ja
+  categories:
+    - GitHub
+    - Event
+    - Tool
+    - Tutorial
+  products:
+    - UIAPduino Pro Micro CH32V003
+    - UIAPduino Pro Micro CH32V006
+  published_at: null
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: CH32V003・CH32V006向けのApple Silicon
+    Mac環境構築例。miseによるツール管理と、ボード別の書き込みタスクを説明しています。
+  tags:
+    - GitHub
+    - Event
+    - Tool
+    - Tutorial
+  official: false
+  status: active
+  verification:
+    checked_url: https://github.com/Sapphire-Lilith/UIAPduino_demo_SWEST28
+    note: リポジトリの本文・READMEを確認。実機動作の追試は行っていません。
+    content_sha256: b96de6d5af238f1b7c06a7be74f4c91b7793836f0926183b93eb5090fe8286f2
+- id: stonedev-app-uiapduino-pro-micro-template
+  title: ch32fun + Makefile開発テンプレート
+  url: https://github.com/stonedev-app/uiapduino-pro-micro-template
+  source: GitHub
+  author: stonedev-app
+  region: Japan
+  language: ja
+  categories:
+    - GitHub
+    - Tool
+    - Tutorial
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: null
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: ch32funを使ってUIAPduino開発を始めるテンプレート。Makefileの配置とCLionでの利用例があり、Cによる小さなプロジェクトの出発点に。
+  tags:
+    - GitHub
+    - Tool
+    - Tutorial
+  official: false
+  status: active
+  verification:
+    checked_url: https://github.com/stonedev-app/uiapduino-pro-micro-template
+    note: リポジトリの本文・READMEを確認。実機動作の追試は行っていません。
+    content_sha256: 9d81ec5e810a0f5aba0a8343941b544dea1fb94e66e0a9d3471bca240c84f527
+- id: tanetakumi-uiapduino-webhid
+  title: WebHIDでLED・GPIO・OLEDを操作する例
+  url: https://github.com/tanetakumi/uiapduino-webhid
+  source: GitHub
+  author: tanetakumi
+  region: Japan
+  language: ja
+  categories:
+    - GitHub
+    - Project
+    - Tutorial
+    - Tool
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: null
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: ch32funとrv003usbのファームウェア、静的Web
+    UIを組み合わせる例。WSLでのビルドとWindowsブラウザでの操作を分けて説明しています。
+  tags:
+    - GitHub
+    - Project
+    - Tutorial
+    - Tool
+  official: false
+  status: active
+  verification:
+    checked_url: https://github.com/tanetakumi/uiapduino-webhid
+    note: リポジトリの本文・READMEを確認。実機動作の追試は行っていません。
+    content_sha256: 0911ac9462443e5686d5b5d8e093d92789fc183e8514d9a7a67a9d239c2d9953
+- id: kentaro-uiapduino-blink
+  title: RustでオンボードLEDを点滅させる
+  url: https://github.com/kentaro/uiapduino-blink
+  source: GitHub
+  author: kentaro
+  region: Japan
+  language: ja
+  categories:
+    - GitHub
+    - Tutorial
+    - Project
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: null
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: Rust nightlyによるLチカ例。ビルド、バイナリ変換、minichlinkでの書き込み手順を掲載し、Rust組込み開発の入口になります。
+  tags:
+    - GitHub
+    - Tutorial
+    - Project
+  official: false
+  status: active
+  verification:
+    checked_url: https://github.com/kentaro/uiapduino-blink
+    note: リポジトリの本文・READMEを確認。実機動作の追試は行っていません。
+    content_sha256: 80e738fd17560ec520f01e1155baa08437dbdce234d0ffeff4462cc079c4f5c0
+- id: junkei-okinawa-blink-with-rust-in-uiapduino
+  title: macOS + RustでUIAPduinoのLチカ
+  url: https://github.com/junkei-okinawa/blink_with_rust_in_UIAPduino
+  source: GitHub
+  author: junkei-okinawa
+  region: Japan
+  language: ja
+  categories:
+    - GitHub
+    - Tutorial
+    - Project
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: null
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: macOSでRust nightlyとbuild-stdを使うLチカ例。ターゲット設定、ELFからBINへの変換、書き込みコマンドを確認できます。
+  tags:
+    - GitHub
+    - Tutorial
+    - Project
+  official: false
+  status: active
+  verification:
+    checked_url: https://github.com/junkei-okinawa/blink_with_rust_in_UIAPduino
+    note: リポジトリの本文・READMEを確認。実機動作の追試は行っていません。
+    content_sha256: 35639c51336f5830b5acd62ea9eeeea338921c2d3cb346b2ddfe81099c309c93
+- id: mnishiguchi-hello-uiap
+  title: UIAPduino開発のセットアップとサンプル集
+  url: https://github.com/mnishiguchi/hello-uiap
+  source: GitHub
+  author: mnishiguchi
+  region: Japan
+  language: ja
+  categories:
+    - GitHub
+    - Tutorial
+    - Tool
+  products:
+    - UIAPduino Pro Micro CH32V003
+    - UIAPduino Pro Micro CH32V006
+  published_at: null
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: Arduinoとch32funのサンプル、セットアップ資料をまとめた開発用リポジトリ。複数のボードや環境を比較して試したい人に。
+  tags:
+    - GitHub
+    - Tutorial
+    - Tool
+  official: false
+  status: active
+  verification:
+    checked_url: https://github.com/mnishiguchi/hello-uiap
+    note: リポジトリの本文・READMEを確認。実機動作の追試は行っていません。
+    content_sha256: b08aecccdeb09a2e4abace9f9ab3db77f99de45f2c6418dd5431b074e70eb0fe
+- id: pokibon3-uiapduino
+  title: モールス・サイドトーン・I2Cのサンプル集
+  url: https://github.com/pokibon3/UIAPduino
+  source: GitHub
+  author: pokibon3
+  region: Japan
+  language: ja
+  categories:
+    - GitHub
+    - Project
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: null
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: モールスのサイドトーン、SI5351aを使うCW送信、I2Cスキャンなどの例。無線・小規模な信号制御に関心がある人向け。
+  tags:
+    - GitHub
+    - Project
+  official: false
+  status: active
+  verification:
+    checked_url: https://github.com/pokibon3/UIAPduino
+    note: リポジトリの本文・READMEを確認。実機動作の追試は行っていません。
+    content_sha256: 44f51919edfc6440819cde6d23c358d4132bcb17a7a28d5374dd5e665ab99c9c
+- id: pokibon3-uiapduino-ch32v006
+  title: CH32V006 V1.1のPlatformIO Lチカ
+  url: https://github.com/pokibon3/UIAPduino_ch32v006
+  source: GitHub
+  author: pokibon3
+  region: Japan
+  language: ja
+  categories:
+    - GitHub
+    - Tutorial
+    - Project
+  products:
+    - UIAPduino Pro Micro CH32V006
+  published_at: null
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: ch32funとPlatformIOでオンボードLEDを点滅させる例。CH32V006向けのボード設定とminichlink書き込みについて説明しています。
+  tags:
+    - GitHub
+    - Tutorial
+    - Project
+  official: false
+  status: active
+  verification:
+    checked_url: https://github.com/pokibon3/UIAPduino_ch32v006
+    note: リポジトリの本文・READMEを確認。実機動作の追試は行っていません。
+    content_sha256: a09111c3aef7d53f7bc612d7c6d662ffbf192f193c9bfc1544f348588e8eaf2a
+- id: jg1eic-uiap-keyer-ds
+  title: UIAPduinoを使うCWキーヤー
+  url: https://github.com/jg1eic/UIAP_KEYER_DS
+  source: GitHub
+  author: jg1eic
+  region: Japan
+  language: ja
+  categories:
+    - GitHub
+    - Project
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: null
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: OLED表示とメッセージメモリを備えるCWキーヤーの実装。操作仕様、設定保存、サイドトーンなどを調べたい無線工作の制作者向け。
+  tags:
+    - GitHub
+    - Project
+  official: false
+  status: active
+  verification:
+    checked_url: https://github.com/jg1eic/UIAP_KEYER_DS
+    note: リポジトリの本文・READMEを確認。実機動作の追試は行っていません。
+    content_sha256: 52d3b35e5c8edb225b76e8ec86439fc66fff4175ab44d3d25e62f5886eea0df7
+- id: tsutsui-uiap-adafruit-sharp-lcd
+  title: SHARPメモリ液晶の圧縮画像アニメーション
+  url: https://github.com/tsutsui/UIAP-adafruit-sharp-lcd
+  source: GitHub
+  author: tsutsui
+  region: Japan
+  language: ja
+  categories:
+    - GitHub
+    - Project
+    - Hardware
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: null
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: ch32funを使う液晶デモ。画像の分割圧縮で小さなRAMに収める方法、配線、NetBSDを含むビルド手順が参考になります。
+  tags:
+    - GitHub
+    - Project
+    - Hardware
+  official: false
+  status: active
+  verification:
+    checked_url: https://github.com/tsutsui/UIAP-adafruit-sharp-lcd
+    note: リポジトリの本文・READMEを確認。実機動作の追試は行っていません。
+    content_sha256: 9309af1018670fc1756eac775d29ae3c72b06995f9a8ca7503801f94b260ad81
+- id: tsutsui-uiap-psgplayer
+  title: UIAPduino上のPSGプレーヤー
+  url: https://github.com/tsutsui/UIAP-psgplayer
+  source: GitHub
+  author: tsutsui
+  region: Japan
+  language: ja
+  categories:
+    - GitHub
+    - Project
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: null
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: YM2149Fを接続してPSG楽曲データを演奏する例。ch32fun、ハードウェア配線、演奏処理を学びたいレトロ音源工作の制作者に。
+  tags:
+    - GitHub
+    - Project
+  official: false
+  status: active
+  verification:
+    checked_url: https://github.com/tsutsui/UIAP-psgplayer
+    note: リポジトリの本文・READMEを確認。実機動作の追試は行っていません。
+    content_sha256: f57d2b8a1c69992eb9ec652226184e858402cd9eb6cf4be94220504dbbcb12d1
+- id: moyashi170607-echo-thereminoid
+  title: 超音波センサーで演奏するRustテルミン風装置
+  url: https://github.com/moyashi170607/ECHO_Thereminoid
+  source: GitHub
+  author: moyashi170607
+  region: Global
+  language: en
+  categories:
+    - GitHub
+    - Project
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: null
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: HC-SR04で手の距離を測り、PWMでブザーの音程を変えるRustファームウェア。センサー入力と音の出力を組み合わせる参考に。
+  tags:
+    - GitHub
+    - Project
+  official: false
+  status: active
+  verification:
+    checked_url: https://github.com/moyashi170607/ECHO_Thereminoid
+    note: リポジトリの本文・READMEを確認。実機動作の追試は行っていません。
+    content_sha256: 3e91d2305a5a2b22bdc91b756ff983880880b47363b08a2ca520560cdca314e8
+- id: moyashi170607-misskey-nostr-notifier
+  title: Misskey / Nostrの通知デバイス
+  url: https://github.com/moyashi170607/Misskey_Nostr_Notifier
+  source: GitHub
+  author: moyashi170607
+  region: Japan
+  language: ja
+  categories:
+    - GitHub
+    - Project
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: null
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: UIAPduinoを用いたSNS通知デバイス。ネット上の通知を手元のハードウェアに取り込む制作例を探す人向け。
+  tags:
+    - GitHub
+    - Project
+  official: false
+  status: active
+  verification:
+    checked_url: https://github.com/moyashi170607/Misskey_Nostr_Notifier
+    note: リポジトリの本文・READMEを確認。実機動作の追試は行っていません。
+    content_sha256: b150d4ebd9fdea965f73327ac19bd68fc69189376eb45410def14542662078fd
+- id: moyashi170607-uiap-judge
+  title: 光センサーとLEDマトリクスで作る電子こっくりさん
+  url: https://github.com/moyashi170607/uiap_judge
+  source: GitHub
+  author: moyashi170607
+  region: Global
+  language: en
+  categories:
+    - GitHub
+    - Project
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: null
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: CdSセルで手かざしを検知し、LEDマトリクスにYes／Noを表示する制作例。入力、乱数、表示アニメーションを組み合わせた工作に。
+  tags:
+    - GitHub
+    - Project
+  official: false
+  status: active
+  verification:
+    checked_url: https://github.com/moyashi170607/uiap_judge
+    note: リポジトリの本文・READMEを確認。実機動作の追試は行っていません。
+    content_sha256: 54b1ccbf7033027668fdf53d41696d49b13bca960f8cc9736d9350d7bc1fef08
+- id: inufuto-uiapduino-lift
+  title: OLEDで遊ぶLIFT mini
+  url: https://github.com/inufuto/UIAPduino_lift
+  source: GitHub
+  author: inufuto
+  region: Japan
+  language: ja
+  categories:
+    - GitHub
+    - Project
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: null
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: UIAPduinoとSSD1306を使う小型ゲーム。開発支援ボードでの動作と操作方法を説明しており、OLEDゲーム実装を読む入口に。
+  tags:
+    - GitHub
+    - Project
+  official: false
+  status: active
+  verification:
+    checked_url: https://github.com/inufuto/UIAPduino_lift
+    note: リポジトリの本文・READMEを確認。実機動作の追試は行っていません。
+    content_sha256: f57a220f6713cabe42bbb942b94306837b927b98810152ff1bd842a8cfe1eea5
+- id: inufuto-uiapduino-ascend
+  title: OLEDで遊ぶASCEND mini
+  url: https://github.com/inufuto/UIAPduino_ascend
+  source: GitHub
+  author: inufuto
+  region: Japan
+  language: ja
+  categories:
+    - GitHub
+    - Project
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: null
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: モンスターを避けて最上階へ進むOLEDゲーム。ブロックを押し上げる仕組みと操作方法を紹介し、小型画面ゲーム制作の参考に。
+  tags:
+    - GitHub
+    - Project
+  official: false
+  status: active
+  verification:
+    checked_url: https://github.com/inufuto/UIAPduino_ascend
+    note: リポジトリの本文・READMEを確認。実機動作の追試は行っていません。
+    content_sha256: bef4f24a824128b8572522eda63cd878f3c159b56972010407781d1297fa0700
+- id: inufuto-uiapduino-antiair
+  title: OLEDで遊ぶAntiAir mini
+  url: https://github.com/inufuto/UIAPduino_antiair
+  source: GitHub
+  author: inufuto
+  region: Japan
+  language: ja
+  categories:
+    - GitHub
+    - Project
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: null
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: 爆弾やブロックを避けながらUFOを倒すOLEDゲーム。配布コードと操作説明があり、UIAPduinoの表示・入力ゲームの例を探せます。
+  tags:
+    - GitHub
+    - Project
+  official: false
+  status: active
+  verification:
+    checked_url: https://github.com/inufuto/UIAPduino_antiair
+    note: リポジトリの本文・READMEを確認。実機動作の追試は行っていません。
+    content_sha256: 4e902dc79d06f54d2ad4ff59fe9d90362e612b46c4f5e308a46df1e2d932ca48
+- id: official-series
+  title: UIAPduino公式シリーズ一覧
+  url: https://www.uiap.jp/uiapduino/
+  source: UIAP
+  author: UIAP
+  region: Japan
+  language: ja
+  categories:
+    - Official
+    - Documentation
+  products:
+    - UIAPduino Pro Micro CH32V003
+    - UIAPduino Pro Micro CH32V006
+    - Tiny CH32 Pad Lite
+  published_at: null
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: 現行シリーズと開発段階を確認する公式の入口。CH32V003、CH32V006（Beta）、Tiny CH32 Pad
+    Lite（Alpha）を案内し、CH32V002は準備中と記載。
+  tags:
+    - Documentation
+  official: true
+  status: active
+  verification:
+    checked_url: https://www.uiap.jp/uiapduino/
+    note: 元ページの本文を確認。内容は確認時点のものです。
+    content_sha256: ddb28c1247e347fe34737824e7c7a22ea0caf00b12be112ad0a04b7f6c976748
+- id: official-v003
+  title: UIAPduino Pro Micro CH32V003 V1.4 公式ドキュメント
+  url: https://www.uiap.jp/uiapduino/pro-micro/ch32v003/v1dot4
+  source: UIAP
+  author: UIAP
+  region: Japan
+  language: ja
+  categories:
+    - Official
+    - Documentation
+    - Hardware
+    - Tutorial
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: null
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: 製品仕様、ピン配置、Arduino・ch32funの開発手順、USB書き込み、販売先までをまとめた基準資料。初めて使う人はここから。
+  tags:
+    - Documentation
+    - Hardware
+    - Tutorial
+  official: true
+  status: active
+  verification:
+    checked_url: https://www.uiap.jp/uiapduino/pro-micro/ch32v003/v1dot4
+    note: 元ページの本文を確認。内容は確認時点のものです。
+    content_sha256: 9af7c7f96f52e02d667f5a80bf69d489d92c7917608e510d8d0decf6ac5d43de
+- id: official-v006
+  title: UIAPduino Pro Micro CH32V006 V1.1 公式ドキュメント
+  url: https://www.uiap.jp/uiapduino/pro-micro/ch32v006/v1dot1
+  source: UIAP
+  author: UIAP
+  region: Japan
+  language: ja
+  categories:
+    - Official
+    - Documentation
+    - Hardware
+  products:
+    - UIAPduino Pro Micro CH32V006
+  published_at: null
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: Beta版CH32V006ボードの公式資料。CH32V003搭載デバッガ、回路、ピン配置、開発方法を確認できます。V003との違いを調べる人に。
+  tags:
+    - Documentation
+    - Hardware
+  official: true
+  status: active
+  verification:
+    checked_url: https://www.uiap.jp/uiapduino/pro-micro/ch32v006/v1dot1
+    note: 元ページの本文を確認。内容は確認時点のものです。
+    content_sha256: a50d72b5099a18af6a14686a11720dd1807ebc5450343a46632d740fdb7c27b8
+- id: official-tiny-pad
+  title: Tiny CH32 Pad Lite V0.1 公式資料（Alpha）
+  url: https://www.uiap.jp/uiapduino/app/tinych32pad/lite/v0dot1
+  source: UIAP
+  author: UIAP
+  region: Japan
+  language: ja
+  categories:
+    - Official
+    - Documentation
+    - Hardware
+  products:
+    - Tiny CH32 Pad Lite
+  published_at: null
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: OLEDゲーム向け試作基板の公式資料。Alpha版で評価が不十分と明記されています。USB・電池の同時接続禁止など、元資料の注意事項を必ず確認。
+  tags:
+    - Documentation
+    - Hardware
+  official: true
+  status: active
+  verification:
+    checked_url: https://www.uiap.jp/uiapduino/app/tinych32pad/lite/v0dot1
+    note: 元ページの本文を確認。内容は確認時点のものです。
+    content_sha256: 51166be51975a8ba994d230a6bc3b7bc922086844d0aaa965d0d2360afee4c9f
+- id: official-events
+  title: UIAPのイベント・訪問講義・発表資料
+  url: https://www.uiap.jp/event
+  source: UIAP
+  author: UIAP
+  region: Japan
+  language: ja
+  categories:
+    - Official
+    - Event
+    - Education
+  products: []
+  published_at: null
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: UIAPduinoの展示・講義と発表資料を探せる公式イベント記録。SWEST28、Meetup、教育向け訪問講義の内容などを確認できます。
+  tags:
+    - Event
+    - Education
+  official: true
+  status: active
+  verification:
+    checked_url: https://www.uiap.jp/event
+    note: 元ページの本文を確認。内容は確認時点のものです。
+    content_sha256: 4ca50c0f7094898f8b9ce8c66a2fec0d52968c65d53d4a0a53968f196b67a08d
+- id: official-uiap-devices
+  title: UIAP公式の設計データ・アプリケーション集
+  url: https://github.com/YuukiUmeta-UIAP/UIAP-Devices
+  source: GitHub
+  author: YuukiUmeta-UIAP
+  region: Global
+  language: en
+  categories:
+    - Official
+    - GitHub
+    - Hardware
+    - Documentation
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: null
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: UIAPのデバイス設計データをまとめる公式リポジトリ。UIAPduinoの回路・基板データや関連アプリケーションのソースを探す人向け。
+  tags:
+    - GitHub
+    - Hardware
+    - Documentation
+  official: true
+  status: active
+  verification:
+    checked_url: https://github.com/YuukiUmeta-UIAP/UIAP-Devices
+    note: リポジトリの本文・READMEを確認。実機動作の追試は行っていません。
+    content_sha256: 20a8cee6c43b861fc9adf85d7d15d9b9de9a63be695f7fefde1e3c2f93cfb536
+- id: official-arduino-core-ch32
+  title: UIAPduino向けArduinoコアの公式フォーク
+  url: https://github.com/YuukiUmeta-UIAP/arduino_core_ch32
+  source: GitHub
+  author: YuukiUmeta-UIAP
+  region: Global
+  language: en
+  categories:
+    - Official
+    - GitHub
+    - Library
+    - Tool
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: null
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: UIAPduino向けに調整されたArduinoコアの公式フォーク。ボードの対応やコア実装を確認する開発者の入口です。
+  tags:
+    - GitHub
+    - Library
+    - Tool
+  official: true
+  status: active
+  verification:
+    checked_url: https://github.com/YuukiUmeta-UIAP/arduino_core_ch32
+    note: リポジトリの本文・READMEを確認。実機動作の追試は行っていません。
+    content_sha256: 5698dc5f56cf7809546fe91bfe6ebdb3e1cbfcce9eda8bac3583d61a3383b0c8
+- id: official-rv003usb
+  title: UIAPduino向けrv003usbの公式フォーク
+  url: https://github.com/YuukiUmeta-UIAP/rv003usb
+  source: GitHub
+  author: YuukiUmeta-UIAP
+  region: Global
+  language: en
+  categories:
+    - Official
+    - GitHub
+    - Library
+    - Tool
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: null
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: UIAPduino向けのUSB実装・ブートローダーの公式フォーク。USB HIDや書き込みの基盤を調べる開発者向け。
+  tags:
+    - GitHub
+    - Library
+    - Tool
+  official: true
+  status: active
+  verification:
+    checked_url: https://github.com/YuukiUmeta-UIAP/rv003usb
+    note: リポジトリの本文・READMEを確認。実機動作の追試は行っていません。
+    content_sha256: c5c5a94aba9f9a690687bb10ae840c94d52c360c23a7e477b9e84d115c479187
+- id: qiita-mac-arduino
+  title: MacでUIAPduinoをArduino IDEから使う
+  url: https://qiita.com/nak435/items/1f4949041fe9f97d9728
+  source: Qiita
+  author: nak435
+  region: Japan
+  language: ja
+  categories:
+    - Article
+    - Tutorial
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: 2026-04-13
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: Apple Silicon Macでのボード追加とminichlinkの導入を説明。VID/PID指定や書き込みを調べたい人向けの具体的な導入記録。
+  tags:
+    - Article
+    - Tutorial
+  official: false
+  status: active
+  verification:
+    checked_url: https://qiita.com/nak435/items/1f4949041fe9f97d9728
+    note: 元ページの本文を確認。内容は確認時点のものです。
+    content_sha256: 043bb5b518c9075213b7bdd6b9c1193414bf8ce4f021820031a27ab1e6da4963
+- id: zenn-platformio
+  title: UIAPduino + ch32funをPlatformIOでビルド・書き込み
+  url: https://zenn.dev/ux_xu/articles/a28dad9e459d47
+  source: Zenn
+  author: まつはち
+  region: Japan
+  language: ja
+  categories:
+    - Article
+    - Tutorial
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: 2026-03-21
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: Windows 11でch32funとPlatformIOを使う手順。設定変更の背景も説明しており、Arduino IDE以外の開発環境を試したい人に。
+  tags:
+    - Article
+    - Tutorial
+  official: false
+  status: active
+  verification:
+    checked_url: https://zenn.dev/ux_xu/articles/a28dad9e459d47
+    note: 元ページの本文を確認。内容は確認時点のものです。
+    content_sha256: 5901d97bd79fd98f812e8bfbdc2690f563820c1d327bc9e801f82ef4955782f4
+- id: utakamo-introduction
+  title: 日本発の小型マイコンUIAPduinoの紹介
+  url: https://utakamo.com/gadget/uiapduino/knowledge/index.html
+  source: うたカモ
+  author: null
+  region: Japan
+  language: ja
+  categories:
+    - Article
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: 2026-04-12
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: UIAPduinoの用途、仕様、設計の考え方を整理した紹介記事。どんな工作に向くか比較する入口として。製品仕様は公式資料も確認してください。
+  tags:
+    - Article
+  official: false
+  status: active
+  verification:
+    checked_url: https://utakamo.com/gadget/uiapduino/knowledge/index.html
+    note: 元ページの本文を確認。内容は確認時点のものです。
+    content_sha256: 88cb81c1fdd6b2a175415160f10063d42e907e0d7a5f8f2f303321d90a990a34
+- id: shop-switch-science
+  title: スイッチサイエンス：UIAPduino CH32V003 V1.4
+  url: https://www.switch-science.com/products/9914
+  source: スイッチサイエンス
+  author: null
+  region: Japan
+  language: ja
+  categories:
+    - Shop
+    - Hardware
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: null
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: 公式製品ページが案内する国内販売先。製品説明・取扱いを確認できます。価格・在庫・配送条件は購入時に販売ページで確認してください。
+  tags:
+    - Shop
+    - Hardware
+  official: false
+  status: active
+  verification:
+    checked_url: https://www.switch-science.com/products/9914
+    note: 元ページの本文を確認。内容は確認時点のものです。
+    content_sha256: 8163ae24b25e522fcaa9c52fe1dfbb8a35be1b9af10159ad5b187cd8c425c359
+- id: shop-booth
+  title: UIAP公式BOOTH：UIAPduino CH32V003 V1.4
+  url: https://uiap.booth.pm/items/5845791
+  source: BOOTH
+  author: UIAP
+  region: Japan
+  language: ja
+  categories:
+    - Official
+    - Shop
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: null
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: UIAPのBOOTH販売ページ。公式製品ページから案内されています。価格・在庫は固定情報として記録せず、購入時のページを確認してください。
+  tags:
+    - Shop
+  official: true
+  status: active
+  verification:
+    checked_url: https://uiap.booth.pm/items/5845791
+    note: 元ページの本文を確認。内容は確認時点のものです。
+    content_sha256: efa1a66e328364b6487a771805485f64e332768c59f8635a04f2102ab05b291e
+- id: sns-sharp-lcd
+  title: UIAPduinoデモ制作についての公開投稿
+  url: https://x.com/tsutsuii/status/2038994480930709659
+  source: X
+  author: Izumi Tsutsui
+  region: Japan
+  language: ja
+  categories:
+    - SNS
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: 2026-03-31
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: UIAPduinoのデモでハード、プログラム、コンテンツを用意する制作過程に触れた公開投稿。作者の試作の様子を知る入口です。
+  tags:
+    - SNS
+  official: false
+  status: active
+  verification:
+    checked_url: https://x.com/tsutsuii/status/2038994480930709659
+    note: 元ページの本文を確認。内容は確認時点のものです。
+    content_sha256: 0f5fee24fbc21d1e71289eb8d438660cd1fe1963a0ca4f1c6dd5325695182b78
+- id: official-board-manager
+  title: UIAPduino公式Arduinoボードマネージャ設定
+  url: https://github.com/YuukiUmeta-UIAP/board_manager_files
+  source: GitHub
+  author: YuukiUmeta-UIAP
+  region: Global
+  language: en
+  categories:
+    - Official
+    - GitHub
+    - Tool
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: null
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: 公式ドキュメントが案内するArduino IDEボードパッケージのインデックス。公式コアを導入する開発者向け。コミュニティHIDパッケージとは別です。
+  tags:
+    - GitHub
+    - Tool
+  official: true
+  status: active
+  verification:
+    checked_url: https://github.com/YuukiUmeta-UIAP/board_manager_files
+    note: リポジトリの本文・READMEを確認。実機動作の追試は行っていません。
+    content_sha256: aba8ec1c7ef809229376b73a9a7d05c678399d4f890b41fec77e9b804b6fce6f
+- id: official-game-console
+  title: Tiny CH32 Pad向けゲームコンソールの公式フォーク
+  url: https://github.com/YuukiUmeta-UIAP/CH32V003-GameConsole
+  source: GitHub
+  author: YuukiUmeta-UIAP
+  region: Global
+  language: en
+  categories:
+    - Official
+    - GitHub
+    - Project
+  products:
+    - Tiny CH32 Pad Lite
+  published_at: null
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: Tiny CH32
+    Pad公式資料から案内されるゲームコンソールのフォーク。上流の汎用CH32V003資料も含むため、UIAPduinoへの適用は公式資料を併読してください。
+  tags:
+    - GitHub
+    - Project
+  official: true
+  status: active
+  verification:
+    checked_url: https://github.com/YuukiUmeta-UIAP/CH32V003-GameConsole
+    note: リポジトリの本文・READMEを確認。実機動作の追試は行っていません。
+    content_sha256: ec763240364d6eaecdc3756f4882ebc40ddd63e457986ec26aeea2629829bef5
+- id: qiita-windows-arduino
+  title: WindowsでUIAPduinoをArduino IDEから使う
+  url: https://qiita.com/usashirou/items/9db90491522aa6dd2c06
+  source: Qiita
+  author: usashirou
+  region: Japan
+  language: ja
+  categories:
+    - Article
+    - Tutorial
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: 2026-03-09
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: Arduino IDE 2系でのボード追加とBlinkの書き込み手順。Windowsで最初のLチカを試したい人に。シームレススイッチ設定の説明もあります。
+  tags:
+    - Article
+    - Tutorial
+  official: false
+  status: active
+  verification:
+    checked_url: https://qiita.com/usashirou/items/9db90491522aa6dd2c06
+    note: 元ページの本文を確認。内容は確認時点のものです。
+    content_sha256: 04ea52e310d90db3ed46e1c981a681a3c004a961afe91a624f691ac18c19ab6d
+- id: qiita-m1-upload
+  title: M1 MacのArduino IDEでUIAPduinoへ書き込む
+  url: https://qiita.com/tomorrow56/items/6cae8ddc7470cb64ad7d
+  source: Qiita
+  author: tomorrow56
+  region: Japan
+  language: ja
+  categories:
+    - Article
+    - Tutorial
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: 2026-02-16
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: Macでのアップロードツール実行形式エラーを調査し、minichlinkをビルドして書き込んだ記録。導入トラブルの切り分けに役立ちます。
+  tags:
+    - Article
+    - Tutorial
+  official: false
+  status: active
+  verification:
+    checked_url: https://qiita.com/tomorrow56/items/6cae8ddc7470cb64ad7d
+    note: 元ページの本文を確認。内容は確認時点のものです。
+    content_sha256: 2fdfb238b37101f3a4f28ea593cfd74045a19e2034da434bd54d0fe2cee15cdc
+- id: qiita-mac-wch-link
+  title: Mac + WCH-LinkEでUIAPduinoを使う
+  url: https://qiita.com/NWLab/items/82bcfd8d3300df087445
+  source: Qiita
+  author: NWLab
+  region: Japan
+  language: ja
+  categories:
+    - Article
+    - Tutorial
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: 2025-03-23
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: WCH-LinkEを利用したMac環境の記録。接続とライブラリ依存の対処を説明しています。2025年時点の内容として最新の公式資料と比較してください。
+  tags:
+    - Article
+    - Tutorial
+  official: false
+  status: active
+  verification:
+    checked_url: https://qiita.com/NWLab/items/82bcfd8d3300df087445
+    note: 元ページの本文を確認。内容は確認時点のものです。
+    content_sha256: 0ce24b1daf15f8cdfc58efe14f47048ef94674dda352f5e70c9e5e691e315bdf
+- id: qiita-platformio
+  title: VSCode上のPlatformIOからUIAPduinoへ書き込む
+  url: https://qiita.com/wks/items/00eed5a02f7f0870326f
+  source: Qiita
+  author: wks
+  region: Japan
+  language: ja
+  categories:
+    - Article
+    - Tutorial
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: 2026-04-08
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: PlatformIOでのボード設定とUSBブートローダーへの書き込みを解説。バイナリ指定など、導入時に遭遇した問題への対処をまとめています。
+  tags:
+    - Article
+    - Tutorial
+  official: false
+  status: active
+  verification:
+    checked_url: https://qiita.com/wks/items/00eed5a02f7f0870326f
+    note: 元ページの本文を確認。内容は確認時点のものです。
+    content_sha256: b44acb6142f215c431e1753a4e466c3c7de53b993da309603cafbfeefd208b13
+- id: qiita-rv003usb
+  title: UIAPduinoをrv003usbで使う・WSL接続
+  url: https://qiita.com/usashirou/items/52d0553d3a10981a0d61
+  source: Qiita
+  author: usashirou
+  region: Japan
+  language: ja
+  categories:
+    - Article
+    - Tutorial
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: 2026-03-09
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: rv003usbの取得、WSLへのUSB接続、udev設定、デモのビルドを紹介。WindowsとLinux環境をまたぐ開発を試す人向け。
+  tags:
+    - Article
+    - Tutorial
+  official: false
+  status: active
+  verification:
+    checked_url: https://qiita.com/usashirou/items/52d0553d3a10981a0d61
+    note: 元ページの本文を確認。内容は確認時点のものです。
+    content_sha256: e81022132c669fba63edf49aaa704998a76a742a496ba8a086559f984c7832f2
+- id: qiita-hid-api
+  title: UIAPduinoでHIDキーボード・マウスAPIを作る
+  url: https://qiita.com/nak435/items/9eeedd9c7405c3e8aab4
+  source: Qiita
+  author: nak435
+  region: Japan
+  language: ja
+  categories:
+    - Article
+    - Tutorial
+    - Project
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: 2026-04-20
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: rv003usbを基にTinyUSB風APIを実装する記事。JIS／USキーコード対応やC++のビルド構成を詳しく読みたい入力デバイス制作者に。
+  tags:
+    - Article
+    - Tutorial
+    - Project
+  official: false
+  status: active
+  verification:
+    checked_url: https://qiita.com/nak435/items/9eeedd9c7405c3e8aab4
+    note: 元ページの本文を確認。内容は確認時点のものです。
+    content_sha256: 84c1b15e2ed59d6928269bac8ffa49efb88658c2602a8d9cd3cfc81cfbf161f9
+- id: qiita-usb-switch
+  title: UIAPduinoの書き込みモード移行用USB切断スイッチ
+  url: https://qiita.com/nak435/items/0e67c71ccfafa88a5599
+  source: Qiita
+  author: nak435
+  region: Japan
+  language: ja
+  categories:
+    - Article
+    - Hardware
+    - Project
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: 2026-04-27
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: USB書き込みモードへの移行を助ける切断スイッチの製作・検証。VBUSだけの切断との違いなど、USB接続の挙動を調べる人向け。
+  tags:
+    - Article
+    - Hardware
+    - Project
+  official: false
+  status: active
+  verification:
+    checked_url: https://qiita.com/nak435/items/0e67c71ccfafa88a5599
+    note: 元ページの本文を確認。内容は確認時点のものです。
+    content_sha256: dd2c38ee084738b06569013b5638e58e17d0d40b0f70de7b64e1364484d8af58
+- id: qiita-elixir-v006
+  title: CH32V006上でElixir / AtomVMのLチカ実験
+  url: https://qiita.com/mnishiguchi/items/d22ccf08fb92a47b8732
+  source: Qiita
+  author: mnishiguchi
+  region: Japan
+  language: ja
+  categories:
+    - Article
+    - Project
+    - Tutorial
+  products:
+    - UIAPduino Pro Micro CH32V006
+  published_at: 2026-09-06
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: 最小構成のAtomVMをCH32V006で動かし、ElixirでLチカした実験記録。Linuxでの準備・ビルド・書き込みを説明。実験段階の構成です。
+  tags:
+    - Article
+    - Project
+    - Tutorial
+  official: false
+  status: active
+  verification:
+    checked_url: https://qiita.com/mnishiguchi/items/d22ccf08fb92a47b8732
+    note: 元ページの本文を確認。内容は確認時点のものです。
+    content_sha256: e567e3858246b39e835dded1a72bc62731c02d9753c999df9ea5ffa76caf6a7d
+- id: qiita-v003-v006
+  title: V003にはボタンがありV006にはない理由
+  url: https://qiita.com/mnishiguchi/items/68ae0a6f2910dee5470b
+  source: Qiita
+  author: mnishiguchi
+  region: Japan
+  language: ja
+  categories:
+    - Article
+    - Documentation
+  products:
+    - UIAPduino Pro Micro CH32V003
+    - UIAPduino Pro Micro CH32V006
+  published_at: 2026-09-24
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: 書き込み用のボタンとオンボードプログラマの違いを解説。V003とV006の開発体験や、プログラマ・デバッガの役割を整理したい人に。
+  tags:
+    - Article
+    - Documentation
+  official: false
+  status: active
+  verification:
+    checked_url: https://qiita.com/mnishiguchi/items/68ae0a6f2910dee5470b
+    note: 元ページの本文を確認。内容は確認時点のものです。
+    content_sha256: bced0e83c8d6631e6f25eefef7f64147fc8b2a36b70fb0da1dcbe79897ccc5c4
+- id: zenn-urb-block
+  title: URB Block LabとUIAPduino / WebHIDの最近の投稿まとめ
+  url: https://zenn.dev/tarosay/articles/x-posts-summary-2026-10
+  source: Zenn
+  author: Tarosay
+  region: Japan
+  language: ja
+  categories:
+    - Article
+    - Education
+    - Tool
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: 2026-10-03
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: ブロックからRubyを生成して基板で実行するURB Block Labの紹介。書き込みの流れと最近の公開投稿をまとめ、教材を探す人向け。
+  tags:
+    - Article
+    - Education
+    - Tool
+  official: false
+  status: active
+  verification:
+    checked_url: https://zenn.dev/tarosay/articles/x-posts-summary-2026-10
+    note: 元ページの本文を確認。内容は確認時点のものです。
+    content_sha256: a56155bc7fe866150c673fafb696ca108de240543b37e07c5626fed2b84aac4d
+- id: zenn-plarail-blink
+  title: プラレール改造計画：MacでUIAPduinoのLチカまで
+  url: https://zenn.dev/sam_akada/articles/08ef64abacf162
+  source: Zenn
+  author: Sam Akada
+  region: Japan
+  language: ja
+  categories:
+    - Article
+    - Tutorial
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: 2026-03-01
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: プラレール改造計画の第1回としてApple Silicon Macでの導入とLチカを記録。充電専用USBケーブルなど、実際に迷った点も紹介しています。
+  tags:
+    - Article
+    - Tutorial
+  official: false
+  status: active
+  verification:
+    checked_url: https://zenn.dev/sam_akada/articles/08ef64abacf162
+    note: 元ページの本文を確認。内容は確認時点のものです。
+    content_sha256: 9a160eb8e5b25fd4b1397a3443102252498c2e5366abaf592896d86934a3acc9
+- id: zenn-manufacturing
+  title: UIAPduinoの製造プロセスと設計思想の取材記事
+  url: https://zenn.dev/sam_akada/articles/c2655c2b5ae5f6
+  source: Zenn
+  author: Sam Akada
+  region: Japan
+  language: ja
+  categories:
+    - Article
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: 2026-03-01
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: 開発者への取材を基に、少人数での量産・検査と設計の考え方を紹介するコミュニティ記事。ボードの背景を知りたい人に。
+  tags:
+    - Article
+  official: false
+  status: active
+  verification:
+    checked_url: https://zenn.dev/sam_akada/articles/c2655c2b5ae5f6
+    note: 元ページの本文を確認。内容は確認時点のものです。
+    content_sha256: 5fde7a01101bebbc0de43255ee5a3a5cf3c9c4015b1556805d625b4345b20958
+- id: shop-elecrow
+  title: Elecrow：UIAPduino CH32V003 V1.4（海外販売先）
+  url: https://www.elecrow.com/uiapduino-pro-micro-ch32v003-v1dot4.html
+  source: Elecrow
+  author: UIAP
+  region: Overseas
+  language: en
+  categories:
+    - Shop
+    - Hardware
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: null
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: 公式サイトが案内する海外販売ページ。英語の製品説明、回路・資料リンクを掲載しています。価格・在庫・国際配送条件は購入時に確認してください。
+  tags:
+    - Shop
+    - Hardware
+  official: false
+  status: active
+  verification:
+    checked_url: https://www.elecrow.com/uiapduino-pro-micro-ch32v003-v1dot4.html
+    note: 元ページの本文を確認。内容は確認時点のものです。
+    content_sha256: d55201e1396fb5f5a05b82df824556afcda342dabfab6c7cf181d35389973560
+- id: shop-btos
+  title: BTOS：UIAPduino CH32V003 V1.4
+  url: https://btoshop.jp/products/jm00005
+  source: BTOS
+  author: null
+  region: Japan
+  language: ja
+  categories:
+    - Shop
+    - Hardware
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: null
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: 公式サイトが案内するビット・トレード・ワンの販売ページ。仕様と購入情報を確認できます。価格や在庫は購入時の最新表示を参照してください。
+  tags:
+    - Shop
+    - Hardware
+  official: false
+  status: active
+  verification:
+    checked_url: https://btoshop.jp/products/jm00005
+    note: 元ページの本文を確認。内容は確認時点のものです。
+    content_sha256: bf0a1209b1da1cc47bf84397ce0a415fa0a60a5279f3c8700392c061e2f2170b
+- id: diary-debian
+  title: Debian 13でUIAPduinoを試してみた
+  url: https://www.ipc.shimane-u.ac.jp/weda/SetupDiary/2026/20260227/
+  source: Setup Diary
+  author: null
+  region: Japan
+  language: ja
+  categories:
+    - Article
+    - Tutorial
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: 2026-02-27
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: Debian 13のArduino
+    IDEから書き込んだ実体験。USB権限、udevルール、古いIDEでのエラー対処を記録。公式の対応環境との違いにも触れています。
+  tags:
+    - Article
+    - Tutorial
+  official: false
+  status: active
+  verification:
+    checked_url: https://www.ipc.shimane-u.ac.jp/weda/SetupDiary/2026/20260227/
+    note: 元ページの本文を確認。内容は確認時点のものです。
+    content_sha256: bb816679cea3f71ddc05198f848b48a7cb356faf078bb33355f4b5e4ed83fb65
+- id: fabscene-manufacturing
+  title: UIAPduinoの開発者・量産工程を取材したFabScene記事
+  url: https://fabscene.com/new/interview/uiapduino-290yen-mass-production-interview/
+  source: FabScene
+  author: 越智 岳人
+  region: Japan
+  language: ja
+  categories:
+    - Article
+    - News
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: 2026-02-26
+  discovered_at: 2026-10-06
+  last_checked_at: 2026-10-06
+  summary_ja: 開発者への取材を通じて、ボード開発、製造委託、全数検査、オープンソース化の目標を紹介。Maker文化と量産の背景を知りたい読者に。
+  tags:
+    - Article
+    - News
+  official: false
+  status: active
+  verification:
+    checked_url: https://fabscene.com/new/interview/uiapduino-290yen-mass-production-interview/
+    note: 元ページの本文を確認。内容は確認時点のものです。
+    content_sha256: 4fadb1205ca3905f89088a801809593235eb57b5243e59d96483b164ab6739da
