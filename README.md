@@ -105,10 +105,10 @@ Pull Request歓迎です。誤情報、著作権や掲載に関する問題、�
 リポジトリは `tana1980/UIAPduino_Watch` です。サイト名はUIAPduino Watch、npmプロジェクト名は `uiapduino-watch` です。公開用のベースパスは `GITHUB_REPOSITORY` から自動算出します。
 
 1. GitHub **Settings → Pages → Build and deployment → Source: GitHub Actions** を設定。
-2. 初回PRの内容を確認し `main` にmerge。
+2. 更新PRの内容を確認し `main` にmerge。
 3. `deploy-pages.yml` が build → validate/test → upload → deploy を実行。
 4. Actionsのdeployジョブが示す実際の公開URLを確認。
 
-公開URLは `https://tana1980.github.io/UIAPduino_Watch/` です。リポジトリは非公開のまま、GitHub Pagesのサイトを一般公開します。旧パスからの自動転送は保証されません。
+公開URLは `https://tana1980.github.io/UIAPduino_Watch/` です。[リポジトリ](https://github.com/tana1980/UIAPduino_Watch)とGitHub Pagesのサイトはどちらも一般公開しています。コードや収録データを閲覧でき、GitHub Issues・Pull Requestから情報提供や修正に参加できます。旧パスからの自動転送は保証されません。
 
 `astro.config.mjs` はproject pagesのベースパスを自動設定。ルート公開・独自ドメインでは `BASE_PATH=/` と `SITE_URL=https://your-domain.example` をビルド時に設定してください。全ての内部リンクとfaviconはベースパスを使用し、CSS/JSはAstroが出力します。
