@@ -1,0 +1,17 @@
+---
+const { resource: r, filterable = false } = Astro.props;
+const payload = filterable ? JSON.stringify(r) : undefined;
+---
+<article class="resource-card" data-resource={payload} id={filterable ? r.id : undefined}>
+  <div class="card-top"><span class:list={['badge',r.official ? 'official' : 'community']}>{r.official ? '✓ Official / 公式' : '◇ Community'}</span><span class="region">{r.region}</span></div>
+  <h3><a href={r.url} rel="noopener noreferrer">{r.title}<span aria-hidden="true"> ↗</span></a></h3>
+  <p class="summary">{r.summary_ja}</p>
+  <ul class="chips" aria-label="カテゴリ">{r.categories.map(c=><li>{c}</li>)}</ul>
+  <dl class="card-meta">
+    <div><dt>対象製品</dt><dd>{r.products.length ? r.products.join(' / ') : '未確認'}</dd></div>
+    <div><dt>言語</dt><dd>{r.language === 'ja' ? '日本語' : r.language === 'en' ? '英語' : r.language === 'unknown' ? '未確認' : r.language}</dd></div>
+    <div><dt>公開日</dt><dd>{r.published_at || '不明'}</dd></div>
+    <div><dt>元サイト</dt><dd>{r.source}{r.author ? ` · ${r.author}` : ''}</dd></div>
+  </dl>
+  <p class="checked">確認日 <time datetime={r.last_checked_at}>{r.last_checked_at}</time></p>
+</article>

@@ -1,0 +1,17 @@
+---
+import Base from '../layouts/Base.astro';
+const base=import.meta.env.BASE_URL;
+---
+<Base title="このサイトについて | UIAPduino Watch">
+<div class="wrap section prose"><p class="eyebrow">ABOUT THE INDEX</p><h1 class="page-title">このサイトについて</h1>
+<p class="info-box"><strong>UIAPduino Watchは非公式のコミュニティ情報ポータルです。UIAP公式とは関係ありません。</strong></p>
+<p>国内外に散らばるUIAPduinoの情報を、「何の情報か」「誰に役立つか」が分かる短い日本語の説明とともに紹介します。公式の資料、第三者の体験、作品、教材、販売ページを区別して掲載します。</p>
+<h2>掲載する情報</h2><ul><li>元ページが実在し、内容を確認できること。</li><li>UIAPduinoと直接関係があり、読者に価値があること。</li><li>同じURLの重複登録をしないこと。</li><li>検索結果の抜粋だけで登録せず、確認できない事実を補完しないこと。</li></ul>
+<p>公式の基準は<a href="https://www.uiap.jp/uiapduino/">UIAPのUIAPduinoページ</a>です。そこから関係を確認できる公式資料・リポジトリ・直営販売ページを「✓ Official / 公式」と表示します。公式に紹介された第三者の作品や取扱店も「◇ Community」です。</p>
+<h2>地域・言語・日付の読み方</h2><p>Japanは日本語の国内向け資料、Overseasは海外発の情報・海外販売先、Globalは国を特定しない情報や多言語の資料です。英語で書かれているだけで海外の作者とは判断しません。製品は元ページで確認できた対象を表示し、未確認なら空欄にします。公開日の不明な資料は「不明」、確認日には本文を読んだ日を記録します。</p>
+<h2>Weekly Picks</h2><p>初回は「Initial Collection」として代表的な情報を紹介します。その後は毎週、新しく見つかった情報と保存済みの候補を比較して3件を選びます。初心者への分かりやすさ、技術的な価値、対象製品・読者・分野の多様性を重視します。過去のおすすめと未採用候補はデータに保存します。</p>
+<h2>情報を追加する</h2><p><a href="https://github.com/tana1980/info_uiapduino">GitHubリポジトリ</a>の<code>data/resources.yml</code>に情報を追加し、未採用の情報は<code>data/candidates.yml</code>から参照してください。元ページを読んだうえで、短い日本語の説明、対象製品、言語、カテゴリ、確認日を記入します。Pull Requestを歓迎します。詳しくはリポジトリのREADMEをご覧ください。</p>
+<h2>誤情報・削除依頼</h2><p>誤り、リンク切れ、掲載の取り下げは<a href="https://github.com/tana1980/info_uiapduino/issues">GitHub Issues</a>へお知らせください。対象URLと、修正内容または削除を希望する理由を添えてください。個人情報や秘密情報は投稿しないでください。</p>
+<h2>更新と権利</h2><p>データが正本で、サイトはそこから生成します。公開データの変更はPRで確認し、外部リンクは週次チェックで見直します。AIや検索結果だけで自動登録・自動推薦する仕組みにはしていません。外部ページの画像やロゴをこのサイトのブランドに使わず、内容は短い紹介とリンクで案内します。</p><p>掲載は製品や手順の動作保証ではありません。仕様、配線、試作基板の注意点、価格、在庫は元ページの最新情報を確認してください。</p>
+<p><a class="button" href={`${base}resources/`}>収録情報を見る →</a></p></div>
+</Base>

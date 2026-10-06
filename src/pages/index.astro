@@ -1,0 +1,24 @@
+---
+import Base from '../layouts/Base.astro';
+import Card from '../components/ResourceCard.astro';
+import { resources, weekly } from '../lib/data.mjs';
+const list = resources();
+const edition = weekly().toSorted((a,b)=>b.date.localeCompare(a.date))[0];
+const picks = edition ? edition.resource_ids.map(id=>list.find(r=>r.id===id)) : [];
+const base = import.meta.env.BASE_URL;
+const stats = [['Total Resources',list.length],['Japan',list.filter(r=>r.region==='Japan').length],['Overseas',list.filter(r=>r.region==='Overseas').length],['Projects',list.filter(r=>r.categories.includes('Project')).length],['Articles',list.filter(r=>r.categories.includes('Article')).length]];
+const browse = [['Official','category','Official'],['Japan','region','Japan'],['Overseas','region','Overseas'],['Projects','category','Project'],['Tutorials','category','Tutorial'],['GitHub','category','GitHub'],['Articles','category','Article'],['Events','category','Event'],['Videos','category','Video'],['Education','category','Education'],['Shop','category','Shop']];
+---
+<Base>
+  <section class="hero wrap">
+    <div class="hero-copy"><p class="eyebrow">SMALL BOARDS. MANY POSSIBILITIES.</p><h1>UIAPduino<br /><span>Watch</span><span class="hero-dot" aria-hidden="true">.</span></h1>
+    <p class="subtitle">UIAPduino Community Links, Projects &amp; Resources</p><p class="hero-description">国内外のUIAPduino情報を集める<br />非公式コミュニティ・インデックス</p>
+    <a class="button" href={`${base}resources/`}>情報を探す <span aria-hidden="true">→</span></a></div>
+    <div class="maker-art" aria-hidden="true"><div class="art-grid"></div><div class="circuit"><div class="board-label">MAKE / LEARN / SHARE</div><div class="chip">W<br /><small>WATCH</small></div><div class="pins left"></div><div class="pins right"></div><div class="led"></div><div class="port"></div></div><span class="art-note">IDEAS START SMALL.</span></div>
+  </section>
+  <section class="stats wrap" aria-label="収録情報の統計">{stats.map(([label,count])=><div><strong>{count}</strong><span>{label}</span></div>)}</section>
+  <section class="wrap section"><div class="section-heading"><div><p class="eyebrow">EDITOR’S DESK</p><h2>{edition?.kind==='initial' ? 'Initial Collection' : 'Weekly Picks'}</h2></div><span class="muted">{edition?.date}</span></div><p class="section-intro">{edition?.intro_ja || 'おすすめは準備中です。'}</p><div class="cards">{picks.map(r=>r && <Card resource={r} />)}</div></section>
+  <section class="browse-section"><div class="wrap section"><p class="eyebrow">FIND YOUR NEXT IDEA</p><h2>Browse <span class="small-heading">入り口を選ぶ</span></h2><div class="browse-grid">{browse.map(([label,key,value],i)=><a href={`${base}resources/?${key}=${value}`}><span class="browse-number">{String(i+1).padStart(2,'0')}</span>{label}<span aria-hidden="true">↗</span></a>)}</div></div></section>
+  <section class="wrap section"><div class="section-heading"><div><p class="eyebrow">JUST ADDED</p><h2>Latest <span class="small-heading">新しく登録された情報</span></h2></div><a href={`${base}resources/`}>すべて見る →</a></div><div class="cards">{list.toSorted((a,b)=>b.discovered_at.localeCompare(a.discovered_at)||a.id.localeCompare(b.id)).slice(0,6).map(r=><Card resource={r} />)}</div></section>
+  <section class="wrap contribute"><div><p class="eyebrow">KEEP THE INDEX GROWING</p><h2>あなたの「作ってみた」も、次の誰かのヒントに。</h2><p>記事、コード、動画、ワークショップ。元ページを確認できる情報を歓迎します。</p></div><a class="button secondary" href={`${base}about/`}>情報の追加方法 →</a></section>
+</Base>

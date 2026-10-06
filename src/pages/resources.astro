@@ -1,0 +1,57 @@
+---
+import Base from '../layouts/Base.astro';
+import Card from '../components/ResourceCard.astro';
+import { resources, categories, regions } from '../lib/data.mjs';
+const list = resources().toSorted((a,b)=>Number(b.official)-Number(a.official)||a.title.localeCompare(b.title,'ja'));
+const languages = [...new Set(list.map(r=>r.language))].sort();
+const products = [...new Set(list.flatMap(r=>r.products))].sort();
+---
+<Base title="情報を探す | UIAPduino Watch">
+  <div class="wrap section"><p class="eyebrow">COMMUNITY INDEX</p><h1 class="page-title">情報を探す</h1><p class="section-intro">作りたいもの、使うボード、学びたいことから探そう。</p>
+  <form id="filters" class="filters" role="search" aria-label="情報の絞り込み" hidden>
+    <label class="search-label">キーワード<input type="search" name="q" placeholder="例：WebHID、Rust、ゲーム" autocomplete="off" /></label>
+    <label>地域<select name="region"><option value="">すべての地域</option>{regions.map(v=><option value={v}>{v}</option>)}</select></label>
+    <label>カテゴリ<select name="category"><option value="">すべてのカテゴリ</option>{categories.map(v=><option value={v}>{v}</option>)}</select></label>
+    <label>言語<select name="language"><option value="">すべての言語</option>{languages.map(v=><option value={v}>{v==='ja'?'日本語':v==='en'?'英語':v==='unknown'?'未確認':v}</option>)}</select></label>
+    <label>製品<select name="product"><option value="">すべての製品</option>{products.map(v=><option value={v}>{v}</option>)}</select></label>
+    <button type="reset" class="reset">条件をクリア</button>
+  </form>
+  <noscript><p class="info-box">全件を表示しています。絞り込みにはJavaScriptを有効にしてください。</p></noscript>
+  <p id="result-count" class="result-count" role="status" aria-live="polite">{list.length} 件の情報</p>
+  <p id="empty" class="info-box" hidden>該当する情報はありません。条件を減らしてお試しください。収録のない分野も情報提供を歓迎します。</p>
+  <div id="results" class="cards">{list.map(r=><Card resource={r} filterable />)}</div>
+  </div>
+</Base>
+<script>
+import { matches } from '../lib/filter.mjs';
+const form = document.querySelector<HTMLFormElement>('#filters')!;
+const cards = [...document.querySelectorAll<HTMLElement>('[data-resource]')].map(el=>({el,resource:JSON.parse(el.dataset.resource!)}));
+const keys = ['q','region','category','language','product'];
+function load() {
+  const params = new URLSearchParams(location.search);
+  for (const key of keys) {
+    const el = form.elements.namedItem(key) as HTMLInputElement | HTMLSelectElement;
+    el.value = params.get(key) || '';
+    if (el instanceof HTMLSelectElement && el.selectedIndex<0) el.value='';
+  }
+  apply(false);
+}
+function apply(updateUrl = true) {
+  const filters = Object.fromEntries(new FormData(form).entries());
+  let count=0;
+  for (const {el,resource} of cards) { el.hidden=!matches(resource,filters); if(!el.hidden) count++; }
+  document.querySelector('#result-count')!.textContent=`${count} / ${cards.length} 件の情報`;
+  (document.querySelector('#empty') as HTMLElement).hidden=count!==0;
+  if (updateUrl) {
+    const params = new URLSearchParams();
+    for (const key of keys) if (filters[key]) params.set(key,String(filters[key]));
+    history.replaceState(null,'',`${location.pathname}${params.size?'?'+params:''}`);
+  }
+}
+form.hidden=false;
+load();
+form.addEventListener('input',()=>apply());
+form.addEventListener('submit',event=>{event.preventDefault();apply();});
+form.addEventListener('reset',()=>setTimeout(()=>apply(),0));
+window.addEventListener('popstate',load);
+</script>
