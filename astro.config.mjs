@@ -1,5 +1,5 @@
 import { defineConfig } from 'astro/config';
-const repo = process.env.GITHUB_REPOSITORY || 'tana1980/info_uiapduino';
+const repo = process.env.GITHUB_REPOSITORY || 'tana1980/UIAPduinoWatch';
 const [owner, name] = repo.split('/');
 const base = process.env.BASE_PATH ?? (name.endsWith('.github.io') ? '/' : `/${name}/`);
 export default defineConfig({

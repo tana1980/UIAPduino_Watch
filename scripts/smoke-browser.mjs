@@ -4,7 +4,7 @@ import { spawn } from 'node:child_process';
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import { resources } from '../src/lib/data.mjs';
-const repo=process.env.GITHUB_REPOSITORY||'tana1980/info_uiapduino';
+const repo=process.env.GITHUB_REPOSITORY||'tana1980/UIAPduinoWatch';
 const name=repo.split('/')[1];
 const base=process.env.BASE_PATH??(name.endsWith('.github.io')?'/':`/${name}/`);
 const url=`http://127.0.0.1:4322${base}`;

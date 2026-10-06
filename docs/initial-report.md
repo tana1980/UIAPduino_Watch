@@ -54,3 +54,7 @@ GitHub Pagesの参照APIは `Resource not accessible by integration`（403）。
 - 公式のCH32V002準備状況、V006 Beta、Tiny Pad Alphaの変化を追う。
 - 次の週次推薦は新着と59件の過去候補を比較する。
 - 必要ならGitHubリポジトリを仕様の `uiapduino-watch` へ移行し、READMEの貢献リンクを変更する。Pagesのbaseはリポジトリ名から自動生成する。
+
+## リポジトリ名変更 — 2026-10-06
+
+初回PR #1はマージされ、旧パスでのPagesデプロイは成功。その後、ユーザーの依頼でリポジトリ名を `UIAPduinoWatch` に変更する更新を追加。現在の公開先は https://tana1980.github.io/UIAPduinoWatch/ 。上記の初回設定時の制約・予定は履歴として保持する。

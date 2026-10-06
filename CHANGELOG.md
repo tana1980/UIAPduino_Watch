@@ -1,5 +1,11 @@
 # Changelog
 
+## リポジトリ名変更 — 2026-10-06
+
+- GitHubリポジトリ名をUIAPduinoWatchに統一。
+- GitHubリンク、開発時の既定base path、ブラウザ検証の既定パスを更新。
+- 公開先を https://tana1980.github.io/UIAPduinoWatch/ に変更。
+
 ## 0.1.0 — 2026-10-06
 
 - UIAPduino Watchの非公式コミュニティ・インデックスを新規構築。
