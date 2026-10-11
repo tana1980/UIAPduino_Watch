@@ -5,3 +5,10 @@
     - official-v003
     - tarosay-scratch3-uiapduino
     - inajob-uiapduino-piano
+- date: 2026-10-11
+  kind: weekly
+  intro_ja: 子ども向けのブロック電子工作、Zephyr開発の入口、まもなく開催される展示イベントから、用途の異なる3件を選びました。
+  resource_ids:
+    - zenn-urb-block
+    - nrf-connect-zephyr-uiapduino-board
+    - official-events

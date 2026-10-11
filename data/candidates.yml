@@ -91,9 +91,6 @@
 - resource_id: official-tiny-pad
   added_at: 2026-10-06
   reason_ja: 元ページ確認済み。次回のWeekly Picksで新着と比較し、対象読者・製品・分野の多様性を考慮する。
-- resource_id: official-events
-  added_at: 2026-10-06
-  reason_ja: 元ページ確認済み。次回のWeekly Picksで新着と比較し、対象読者・製品・分野の多様性を考慮する。
 - resource_id: official-uiap-devices
   added_at: 2026-10-06
   reason_ja: 元ページ確認済み。次回のWeekly Picksで新着と比較し、対象読者・製品・分野の多様性を考慮する。
@@ -154,9 +151,7 @@
 - resource_id: qiita-v003-v006
   added_at: 2026-10-06
   reason_ja: 元ページ確認済み。次回のWeekly Picksで新着と比較し、対象読者・製品・分野の多様性を考慮する。
-- resource_id: zenn-urb-block
-  added_at: 2026-10-06
-  reason_ja: 元ページ確認済み。次回のWeekly Picksで新着と比較し、対象読者・製品・分野の多様性を考慮する。
+
 - resource_id: zenn-plarail-blink
   added_at: 2026-10-06
   reason_ja: 元ページ確認済み。次回のWeekly Picksで新着と比較し、対象読者・製品・分野の多様性を考慮する。
@@ -175,3 +170,9 @@
 - resource_id: fabscene-manufacturing
   added_at: 2026-10-06
   reason_ja: 元ページ確認済み。次回のWeekly Picksで新着と比較し、対象読者・製品・分野の多様性を考慮する。
+- resource_id: papico-uiapduino-fft-sensors
+  added_at: 2026-10-11
+  reason_ja: センサー計測からFFTまでを小容量マイコン上で実装する制作記録。WebHIDやイベント候補と分野を分けて次週以降に比較する。
+- resource_id: papico-uiapduino-webhid-lab
+  added_at: 2026-10-11
+  reason_ja: WebHID Labを使ったブラウザ表示と接続例。最新のURB Block Lab記事と内容が一部重なるため、読者価値を次週以降に比較する。
