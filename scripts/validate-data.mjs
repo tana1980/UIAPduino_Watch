@@ -34,7 +34,7 @@ export function validate(resources, candidates, picks) {
   }
   const pickIds = new Set(), editions = new Set();
   for (const [i,p] of picks.entries()) {
-    if (!p || !date(p.date) || !['initial','weekly'].includes(p.kind) || !Array.isArray(p.resource_ids) || !p.resource_ids.length || (p.kind==='weekly' && p.resource_ids.length!==3) || new Set(p.resource_ids).size!==p.resource_ids.length) { errors.push(`picks[${i}]: invalid edition`); continue; }
+    if (!p || !date(p.date) || !['initial','weekly'].includes(p.kind) || !Array.isArray(p.resource_ids) || !p.resource_ids.length || (p.kind==='weekly' && (p.resource_ids.length<1 || p.resource_ids.length>3)) || new Set(p.resource_ids).size!==p.resource_ids.length) { errors.push(`picks[${i}]: invalid edition`); continue; }
     if (editions.has(p.date)) errors.push(`picks[${i}]: duplicate date`); editions.add(p.date);
     for (const id of p.resource_ids) { if (!resources.some(r=>r.id===id && r.status==='active')) errors.push(`picks[${i}]: invalid resource ${id}`); pickIds.add(id); }
     if (typeof p.intro_ja !== 'string' || !p.intro_ja.trim()) errors.push(`picks[${i}]: missing intro_ja`);

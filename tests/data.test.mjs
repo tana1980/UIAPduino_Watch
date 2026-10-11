@@ -10,7 +10,25 @@ test('normalized duplicate URLs are rejected',()=>{const f=fixture();f[0][1].url
 test('impossible dates are rejected',()=>{const f=fixture();f[0][0].last_checked_at='2026-02-30';assert.match(validate(...f).join('\n'),/invalid last_checked_at/);});
 test('official identity requires matching category',()=>{const f=fixture();f[0][0].official=true;assert.match(validate(...f).join('\n'),/Official category\/flag mismatch/);});
 test('unconfirmed pages cannot lack verification records',()=>{const f=fixture();delete f[0][0].verification;assert.match(validate(...f).join('\n'),/source verification/);});
-test('weekly editions require exactly three active resources',()=>{const f=fixture();f[2][0].kind='weekly';f[2][0].resource_ids.pop();assert.match(validate(...f).join('\n'),/invalid edition/);});
+test('weekly editions allow one to three active resources',()=>{
+  for (const count of [1,2,3]) {
+    const f=fixture();
+    const resource_ids=f[1].slice(0,count).map(c=>c.resource_id);
+    f[1]=f[1].filter(c=>!resource_ids.includes(c.resource_id));
+    f[2].push({date:'2026-10-12',kind:'weekly',intro_ja:'Weekly test edition',resource_ids});
+    assert.deepEqual(validate(...f),[]);
+  }
+});
+test('weekly editions reject zero or more than three resources',()=>{
+  const zero=fixture();
+  zero[2].push({date:'2026-10-12',kind:'weekly',intro_ja:'Weekly test edition',resource_ids:[]});
+  assert.match(validate(...zero).join('\n'),/invalid edition/);
+  const four=fixture();
+  const resource_ids=four[1].slice(0,4).map(c=>c.resource_id);
+  four[1]=four[1].filter(c=>!resource_ids.includes(c.resource_id));
+  four[2].push({date:'2026-10-12',kind:'weekly',intro_ja:'Weekly test edition',resource_ids});
+  assert.match(validate(...four).join('\n'),/invalid edition/);
+});
 test('unused confirmed candidates cannot be dropped',()=>{const f=fixture();f[1].pop();assert.match(validate(...f).join('\n'),/missing candidate/);});
 test('credential URLs are rejected',()=>{const f=fixture();f[0][0].url='https://secret:password@example.com';assert.match(validate(...f).join('\n'),/invalid HTTPS URL/);});
 test('all filter dimensions compose with AND',()=>{const r=readData('resources').find(r=>r.id==='inajob-uiapduino-piano');assert.equal(matches(r,{region:'Japan',category:'Project',language:'ja',product:'UIAPduino Pro Micro CH32V003',q:'PWM'}),true);assert.equal(matches(r,{region:'Overseas',q:'PWM'}),false);});

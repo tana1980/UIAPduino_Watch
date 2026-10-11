@@ -47,3 +47,25 @@ Googleで上記の英語クエリ、国内サービス指定、製品名検索�
 ## 保留情報を失わないための追跡
 
 掲載前の未確認情報は `docs/discovery-backlog.yml` に保存。確認済み・収録済みの情報は `data/candidates.yml` に保持する。未確認情報はWebサイトへ表示せず、Weekly Picksの選考に入れる前に元ページを確認する。
+
+
+## 週次調査記録 — 2026-10-11
+
+### 確認した範囲
+
+- 公式シリーズページとイベントページを再確認。CH32V003 V1.4、CH32V006 V1.1 Beta、Tiny CH32 Pad Lite V0.1 Alpha、および準備中製品の表示を確認。PicoRubyKaigi 2026 Assemble（2026-10-31）の展示協賛とUIAPduino提供の記載を確認し、公式イベントリソースを更新。
+- Web検索語：`UIAPduino 2026 project CH32V003`、`"UIAPduino" "2026"`、`site:github.com UIAPduino CH32V003 project`、`"UIAPduino Pro Micro CH32V006" project tutorial`、`"Tiny CH32 Pad Lite"`、`UIAPduino WebHID FFT note papico`。英語クエリを含む検索を実施。検索結果は発見に使い、採用根拠は元ページ本文を確認。
+- GitHub検索結果を確認し、既存GitHub候補と照合。検索で見つかった汎用CH32V003案件はUIAPduinoの直接利用を本文で確認できなかったため追加しなかった。今回、追加登録したGitHub情報はない。
+- Zennの2026-10-03記事「URB Block Lab と最近のXの投稿まとめ」を本文確認。ブロック→Ruby→URB1バイトコード→EEPROM→TinyVMの流れ、24FC256対応、Xcratch v0.3.0、接続診断、CoderDojoでの改善を確認。
+- noteの `papico_2020` による2026-09-23 WebHID記事と2026-09-12 センサー・FFT記事を本文確認。前者はWebHID LabのHID Console、Ruby/ブロック環境、CdS測定値表示、後者は複数センサーとメモリ制約下のFFT表示を確認。
+- nRF Connect SDKのZephyrボード資料を本文確認。UIAPduino Pro Micro CH32V003の基本GPIO/LED、minichlink、west build/flash手順と、ページ上の保守状態表示を確認。
+
+### 選定・見送り
+
+- Weekly Picksは公式の次回予定、子ども向け電子工作に実装されたブロック環境の新機能、Zephyrでの開発手順を組み合わせ、イベント／教育記事／開発ドキュメントの分野を分散した。
+- noteのWebHID記事は技術的価値があるが、今週選んだZennの更新記事とWebHID Labの話題が一部重なるため候補として保存。センサー・FFT記事も独立した制作事例として候補に残し、次週以降に比較する。
+- 3件の選定理由は、開催時期の近さ、子ども向け教育・EEPROM対応などの最近の具体的な開発、別開発環境の手順と保守状態が明確な資料である。
+
+### 未確認範囲
+
+この実行ではYouTubeでは検索結果から既存の紹介動画の内容・公開日を確認したが、今回の新規情報としては採用しなかった。Qiita、Zenn、noteのサービス内検索と本文、公式イベント、GitHub検索を確認。公開SNSの全投稿、各ショップの商品ページ、一般検索サービスの網羅的探索までは行っていない。検索結果の未表示を「情報なし」とは扱わない。Zephyr資料は最新ドキュメントとして公開されているが、ページ上で積極的な保守担当者がいないと表示されるため、その点を紹介文に含めた。

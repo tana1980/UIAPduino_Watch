@@ -919,8 +919,8 @@
   products: []
   published_at: null
   discovered_at: 2026-10-06
-  last_checked_at: 2026-10-06
-  summary_ja: UIAPduinoの展示・講義と発表資料を探せる公式イベント記録。SWEST28、Meetup、教育向け訪問講義の内容などを確認できます。
+  last_checked_at: 2026-10-11
+  summary_ja: UIAPduinoの展示・講義を含む公式イベント記録。2026年10月31日のPicoRubyKaigi 2026 Assembleへの展示協賛など、今後の参加予定を確認できます。
   tags:
     - Event
     - Education
@@ -928,8 +928,7 @@
   status: active
   verification:
     checked_url: https://www.uiap.jp/event
-    note: 元ページの本文を確認。内容は確認時点のものです。
-    content_sha256: 4ca50c0f7094898f8b9ce8c66a2fec0d52968c65d53d4a0a53968f196b67a08d
+    note: 元ページを2026-10-11に確認。2026年10月31日のPicoRubyKaigi 2026 AssembleでUIAPduinoを無償提供する展示協賛の記載を確認。
 - id: official-uiap-devices
   title: UIAP公式の設計データ・アプリケーション集
   url: https://github.com/YuukiUmeta-UIAP/UIAP-Devices
@@ -1459,8 +1458,8 @@
     - UIAPduino Pro Micro CH32V003
   published_at: 2026-10-03
   discovered_at: 2026-10-06
-  last_checked_at: 2026-10-06
-  summary_ja: ブロックからRubyを生成して基板で実行するURB Block Labの紹介。書き込みの流れと最近の公開投稿をまとめ、教材を探す人向け。
+  last_checked_at: 2026-10-11
+  summary_ja: ブロックからRubyを生成して基板内のTinyVMで動かすURB Block Labの解説。24FC256対応、Xcratch v0.3.0、WebHID接続診断などの公開更新をまとめ、教育や電子工作の教材を探す人向け。
   tags:
     - Article
     - Education
@@ -1469,8 +1468,7 @@
   status: active
   verification:
     checked_url: https://zenn.dev/tarosay/articles/x-posts-summary-2026-10
-    note: 元ページの本文を確認。内容は確認時点のものです。
-    content_sha256: a56155bc7fe866150c673fafb696ca108de240543b37e07c5626fed2b84aac4d
+    note: 元ページを2026-10-11に確認。URB Block Labの仕組み、24FC256対応、Xcratch v0.3.0、接続診断ページ、CoderDojoでの改良を確認。
 - id: zenn-plarail-blink
   title: プラレール改造計画：MacでUIAPduinoのLチカまで
   url: https://zenn.dev/sam_akada/articles/08ef64abacf162
@@ -1620,3 +1618,82 @@
     checked_url: https://fabscene.com/new/interview/uiapduino-290yen-mass-production-interview/
     note: 元ページの本文を確認。内容は確認時点のものです。
     content_sha256: 4fadb1205ca3905f89088a801809593235eb57b5243e59d96483b164ab6739da
+
+- id: papico-uiapduino-webhid-lab
+  title: UIAPduino 290円マイコン WebHIDの世界が広がっていた
+  url: https://note.com/papico_2020/n/ncf777f7f43f0
+  source: note
+  author: papico_2020
+  region: Japan
+  language: ja
+  categories:
+    - Article
+    - Education
+    - Tool
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: 2026-09-23
+  discovered_at: 2026-10-11
+  last_checked_at: 2026-10-11
+  summary_ja: UIAPduino WebHID Labを使ったブラウザ通信やセンサー値表示を紹介。HID Console、Ruby、ブロック環境の活用例があり、PC側へ処理を分担する発想を学べます。
+  tags:
+    - Article
+    - Education
+    - WebHID
+  official: false
+  status: active
+  verification:
+    checked_url: https://note.com/papico_2020/n/ncf777f7f43f0
+    note: 元ページ本文を確認。WebHID Labの機能、通信例、CdSセンサー値のブラウザ表示を確認。
+- id: papico-uiapduino-fft-sensors
+  title: UIAPduinoで遊んでみる ついにFFTへ
+  url: https://note.com/papico_2020/n/n815f49883f14
+  source: note
+  author: papico_2020
+  region: Japan
+  language: ja
+  categories:
+    - Article
+    - Project
+    - Tutorial
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: 2026-09-12
+  discovered_at: 2026-10-11
+  last_checked_at: 2026-10-11
+  summary_ja: 超音波・温湿度・赤外線センサーを試し、メモリ制約に合わせてLCDからLEDの4bit表示へ切り替え、FFTまで実装した制作記録。小容量マイコンでの設計判断を学べます。
+  tags:
+    - Article
+    - Project
+    - Sensors
+  official: false
+  status: active
+  verification:
+    checked_url: https://note.com/papico_2020/n/n815f49883f14
+    note: 元ページ本文を確認。HC-SR04、BME280、TCRT5000と、4bit LED表示によるFFTの制作過程を確認。
+- id: nrf-connect-zephyr-uiapduino-board
+  title: ZephyrでUIAPduino Pro Micro CH32V003を使う
+  url: https://nrfconnectdocs.nordicsemi.com/ncs/latest/zephyr/boards/uiap/uiapduino_pro_micro_ch32v003/doc/index.html
+  source: nRF Connect SDK documentation
+  author: null
+  region: Global
+  language: en
+  categories:
+    - Documentation
+    - Tutorial
+    - Tool
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: null
+  discovered_at: 2026-10-11
+  last_checked_at: 2026-10-11
+  summary_ja: Zephyr/NCSでのボード設定資料。GPIOとオンボードLEDの対応、minichlinkの準備、west buildとwest flashの手順を確認できます。ページでは積極的な保守担当者がいない旨も示されています。
+  tags:
+    - Documentation
+    - Zephyr
+    - Tool
+  official: false
+  status: active
+  verification:
+    checked_url: https://nrfconnectdocs.nordicsemi.com/ncs/latest/zephyr/boards/uiap/uiapduino_pro_micro_ch32v003/doc/index.html
+    note: 元ページ本文を確認。基本GPIO/LED対応、書き込み方法、保守状態の表示を確認。
