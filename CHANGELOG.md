@@ -6,6 +6,12 @@
 
 # Changelog
 
+## Weekly update — 2026-10-18
+
+- WindowsでのUSB HID開発手順、初心者向けLED点滅教材、UIAPduino用実験ボード、サーボを使った制作記録を追加。
+- Weekly Picksに開発手順、サーボ工作の制作記録、入門教材の3件を掲載。実験ボードとセンサー・FFT記事は候補として保持。
+- 掲載URLの応答を確認。Zephyr資料の403はアクセス制限として要再確認。
+
 ## リポジトリ名変更 — 2026-10-06
 
 - リポジトリの改名に合わせ、GitHubリンクと公開パスをUIAPduino_Watchに更新。

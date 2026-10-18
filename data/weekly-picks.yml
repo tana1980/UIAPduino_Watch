@@ -12,3 +12,10 @@
     - zenn-urb-block
     - nrf-connect-zephyr-uiapduino-board
     - official-events
+- date: 2026-10-18
+  kind: weekly
+  intro_ja: WindowsでのUSB開発、サーボを使った工作の試行錯誤、はじめてのLED点滅から、用途の異なる3件を選びました。
+  resource_ids:
+    - kame404-uiapduino-hid-windows
+    - papico-uiapduino-servo-projects
+    - logiclab-uiapduino-blink
