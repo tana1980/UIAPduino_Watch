@@ -1697,3 +1697,79 @@
   verification:
     checked_url: https://nrfconnectdocs.nordicsemi.com/ncs/latest/zephyr/boards/uiap/uiapduino_pro_micro_ch32v003/doc/index.html
     note: 元ページ本文を確認。基本GPIO/LED対応、書き込み方法、保守状態の表示を確認。
+- id: kame404-uiapduino-hid-windows
+  title: UIAPduinoをUSBデバイスとして動かす手順（Windows）
+  url: https://kame404.com/posts/uiapduino-hid/
+  source: kame404 blog
+  author: kame404
+  region: Japan
+  language: ja
+  categories: [Article, Tutorial]
+  products: [UIAPduino Pro Micro CH32V003]
+  published_at: 2026-03-04
+  discovered_at: 2026-10-13
+  last_checked_at: 2026-10-13
+  summary_ja: WindowsとWSLを使い、ch32funとrv003usbでUIAPduinoをUSBキーボードとして動かす手順。最小構成のコード、ビルド、書き込みを段階的に説明しています。
+  tags: [USB, HID, Windows]
+  official: false
+  status: active
+  verification:
+    checked_url: https://kame404.com/posts/uiapduino-hid/
+    note: 公開記事本文を確認。WSLでのビルド、Windows側の書き込み、HIDキー送信の手順を確認。
+- id: logiclab-uiapduino-blink
+  title: UIAPduinoでLチカしよう
+  url: https://logiclab.blog.jp/archives/91338582.html
+  source: ロジックラボ for kids
+  author: ロジラボ
+  region: Japan
+  language: ja
+  categories: [Article, Tutorial, Education]
+  products: [UIAPduino Pro Micro CH32V003]
+  published_at: 2026-05-04
+  discovered_at: 2026-10-13
+  last_checked_at: 2026-10-13
+  summary_ja: Arduino IDEの導入からボード設定、内蔵LEDと外付けLEDの点滅までを順に説明する入門教材。配線と抵抗の考え方、書き込み時の対処も扱います。
+  tags: [Arduino, LED, Education]
+  official: false
+  status: active
+  verification:
+    checked_url: https://logiclab.blog.jp/archives/91338582.html
+    note: 公開記事本文を確認。Arduino IDE設定、点滅コード、外付けLED配線の説明を確認。
+- id: jh4vaj-ufss01
+  title: UFSS01 — UIAPduino お手軽実験ボード
+  url: https://www.jh4vaj.com/ufss01
+  source: jh4vaj
+  author: jh4vaj
+  region: Japan
+  language: ja
+  categories: [Article, Hardware, Project, Shop]
+  products: [UIAPduino Pro Micro CH32V003]
+  published_at: 2026-05-19
+  discovered_at: 2026-10-13
+  last_checked_at: 2026-10-13
+  summary_ja: UIAPduino Pro Micro CH32V003 V1.4向けの実験ボード。スイッチ、LED、可変抵抗などを載せ、回路と組み立て方を公開しています。作者は電子工作の経験者向けと説明しています。
+  tags: [Hardware, Project]
+  official: false
+  status: active
+  verification:
+    checked_url: https://www.jh4vaj.com/ufss01
+    note: 公開記事本文を確認。回路、部品、組み立て、頒布案内と対象読者の記述を確認。
+- id: papico-uiapduino-servo-projects
+  title: UIAPduinoとサーボモータの工作記録（X投稿まとめ）
+  url: https://note.com/papico_2020/n/n9c2c80ee46e3
+  source: note
+  author: papico_2020
+  region: Japan
+  language: ja
+  categories: [Article, Project]
+  products: []
+  published_at: 2026-10-16
+  discovered_at: 2026-10-18
+  last_checked_at: 2026-10-18
+  summary_ja: サーボモータを使い、紙工作の改札機やプラレール分岐を試作した記録。取り付け位置や干渉を厚紙で確かめる過程も紹介しています。
+  tags: [サーボモータ, 工作, 試作]
+  official: false
+  status: active
+  verification:
+    checked_url: https://note.com/papico_2020/n/n9c2c80ee46e3
+    note: 公開記事本文を確認。サーボによる改札機とプラレール分岐、厚紙試作と干渉確認の記述を確認。
