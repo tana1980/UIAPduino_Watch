@@ -12,3 +12,10 @@
     - zenn-urb-block
     - nrf-connect-zephyr-uiapduino-board
     - official-events
+- date: 2026-10-18
+  kind: weekly
+  intro_ja: WebHIDツールの技術改善、サーボで動く身近な工作、PWMファンと音楽を組み合わせた作品から、開発・試作・ものづくりの3件を選びました。
+  resource_ids:
+    - tarosay-uiap-hid-web
+    - papico-uiapduino-servo
+    - cutteeworks-softcream-fan

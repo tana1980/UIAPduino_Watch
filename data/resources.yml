@@ -66,8 +66,8 @@
     - UIAPduino Pro Micro CH32V003
   published_at: null
   discovered_at: 2026-10-06
-  last_checked_at: 2026-10-06
-  summary_ja: ブラウザから基板を操作する練習ページ群。HID Consoleやブロック・Rubyの学習環境をまとめ、ブラウザで電子工作を始めたい人向け。
+  last_checked_at: 2026-10-18
+  summary_ja: ブラウザから基板を操作する練習ページ群。2026年10月18日の更新では、数値式の括弧対応、rand入力範囲の検査、乱数の偏りを抑える引き直し処理が追加され、WebHIDで試せる学習環境も公開されています。
   tags:
     - GitHub
     - Education
@@ -77,8 +77,8 @@
   status: active
   verification:
     checked_url: https://github.com/tarosay/uiap-hid-web
-    note: リポジトリの本文・READMEを確認。実機動作の追試は行っていません。
-    content_sha256: 718e5493a04d51f39967d35dde995f202bf62ff289a8dd07a9f2286849fddfd6
+    note: READMEと更新履歴を2026-10-18に確認。乱数の分布検証について作者の記録を確認しましたが、独立した実機追試はしていません。
+    content_sha256: 139a6e91c85b4a7e9062b04f095f01594f150ebf9123fd8727fa20c615ef5b4e
 - id: tarosay-urb-gallery
   title: URBで作った作品を共有するギャラリー
   url: https://github.com/tarosay/urb-gallery
@@ -907,7 +907,7 @@
     content_sha256: 51166be51975a8ba994d230a6bc3b7bc922086844d0aaa965d0d2360afee4c9f
 - id: official-events
   title: UIAPのイベント・訪問講義・発表資料
-  url: https://www.uiap.jp/event
+  url: https://www.uiap.jp/event.html
   source: UIAP
   author: UIAP
   region: Japan
@@ -919,16 +919,16 @@
   products: []
   published_at: null
   discovered_at: 2026-10-06
-  last_checked_at: 2026-10-11
-  summary_ja: UIAPduinoの展示・講義を含む公式イベント記録。2026年10月31日のPicoRubyKaigi 2026 Assembleへの展示協賛など、今後の参加予定を確認できます。
+  last_checked_at: 2026-10-18
+  summary_ja: UIAPduinoの展示・講義を含む公式イベント記録。2026年11月14〜15日のNT名古屋2026、11月22日の電波文化祭7など、今後の参加予定を確認できます。
   tags:
     - Event
     - Education
   official: true
   status: active
   verification:
-    checked_url: https://www.uiap.jp/event
-    note: 元ページを2026-10-11に確認。2026年10月31日のPicoRubyKaigi 2026 AssembleでUIAPduinoを無償提供する展示協賛の記載を確認。
+    checked_url: https://www.uiap.jp/event.html
+    note: 元ページを2026-10-18に確認。NT名古屋2026（11月14〜15日）と電波文化祭7（11月22日）の掲載を確認。開催状況は変更される可能性があります。
 - id: official-uiap-devices
   title: UIAP公式の設計データ・アプリケーション集
   url: https://github.com/YuukiUmeta-UIAP/UIAP-Devices
@@ -1697,3 +1697,85 @@
   verification:
     checked_url: https://nrfconnectdocs.nordicsemi.com/ncs/latest/zephyr/boards/uiap/uiapduino_pro_micro_ch32v003/doc/index.html
     note: 元ページ本文を確認。基本GPIO/LED対応、書き込み方法、保守状態の表示を確認。
+- id: papico-uiapduino-servo
+  title: UIAPduino 290円マイコン　サーボモータで世界が広がった〖X投稿まとめ〗
+  url: https://note.com/papico_2020/n/n9c2c80ee46e3
+  source: note
+  author: papico_2020
+  region: Japan
+  language: ja
+  categories:
+    - Article
+    - Project
+    - Tutorial
+    - Education
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: 2026-10-16
+  discovered_at: 2026-10-18
+  last_checked_at: 2026-10-18
+  summary_ja: サーボを使った紙製自動ゲートやプラレールのポイント切替など、身近な工作例を紹介。取り付け位置や可動域の確認も記録され、初心者が機構を試作する際の参考になります。
+  tags:
+    - Article
+    - Project
+    - Servo
+    - Education
+  official: false
+  status: active
+  verification:
+    checked_url: https://note.com/papico_2020/n/n9c2c80ee46e3
+    note: 元ページ本文を確認。サーボを使ったゲートとプラレール切替の制作例、取り付け位置・可動範囲の説明を確認。
+- id: cutteeworks-softcream-fan
+  title: ソフトクリームファン：PWMファンとテーマ曲の工作
+  url: https://github.com/CuteeWorks/SoftCreamFan
+  source: GitHub
+  author: CuteeWorks
+  region: Japan
+  language: ja
+  categories:
+    - GitHub
+    - Project
+    - Hardware
+    - Education
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: 2026-10-03
+  discovered_at: 2026-10-18
+  last_checked_at: 2026-10-18
+  summary_ja: ソフトクリーム型筐体の小型ファンをUIAPduinoでPWM制御し、音楽再生も組み合わせた工作作品。回路図・基板データ・筐体資料・プログラムが公開され、ワークショップ教材としても参考になります。
+  tags:
+    - GitHub
+    - Project
+    - PWM
+    - Workshop
+  official: false
+  status: active
+  verification:
+    checked_url: https://github.com/CuteeWorks/SoftCreamFan
+    note: READMEと公開ファイル構成を確認。PWM制御、音声再生、回路・基板・筐体資料の記載を確認。実機の独立追試はしていません。
+- id: papico-uiapduino-usb-write-error
+  title: UIAPduinoのUSB書き込みエラーへの対処案
+  url: https://note.com/papico_2020/n/ncce1177e3521
+  source: note
+  author: papico_2020
+  region: Japan
+  language: ja
+  categories:
+    - Article
+    - Tutorial
+    - Documentation
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: 2026-09-28
+  discovered_at: 2026-10-18
+  last_checked_at: 2026-10-18
+  summary_ja: 書き込み時の接続エラーについて、データ通信対応ケーブル、短いケーブル、USBポート変更やハブ利用など投稿者が試した対処をまとめています。原因は特定されていないため、状況を切り分ける参考情報として扱います。
+  tags:
+    - Article
+    - Tutorial
+    - Troubleshooting
+  official: false
+  status: active
+  verification:
+    checked_url: https://note.com/papico_2020/n/ncce1177e3521
+    note: 元ページ本文を確認。投稿者の環境で試した対処案と原因未特定の記述を確認。公式資料にもケーブル・ポート・ハブの注意事項があります。
