@@ -1,8 +1,38 @@
 import fs from 'node:fs/promises';
+import path from 'node:path';
 import { resources } from '../src/lib/data.mjs';
 const list=resources(), results=[];
+const known=new Set(list.map(r=>r.url));
+async function includePageLinks(dir) {
+  for (const entry of await fs.readdir(dir,{withFileTypes:true})) {
+    const file=path.join(dir,entry.name);
+    if (entry.isDirectory()) {await includePageLinks(file);continue;}
+    if (!entry.name.endsWith('.html')) continue;
+    const html=await fs.readFile(file,'utf8');
+    for (const [,encoded] of html.matchAll(/\b(?:href|src)="(https?:\/\/[^\"]+)"/g)) {
+      const url=encoded.replaceAll('&amp;','&');
+      if (known.has(url)) continue;
+      known.add(url);
+      list.push({id:`page-link-${list.length+1}`,url});
+    }
+  }
+}
+await includePageLinks('dist');
+function sensitiveUrl(url) {
+  try {
+    const parsed=new URL(url);
+    return Boolean(parsed.username||parsed.password||[...parsed.searchParams.keys()].some(k=>/token|key|secret|password|signature|credential|session|auth/i.test(k)));
+  } catch {return true;}
+}
 async function check(r) {
-  let result={id:r.id,url:r.url,checked_at:new Date().toISOString()};
+  let result={id:r.id,checked_at:new Date().toISOString()};
+  if (sensitiveUrl(r.url)) {
+    result={...result,outcome:'needs_review',error:'URL contains credentials or cannot be parsed'};
+    results.push(result);
+    console.log(`${result.outcome}: ${r.id} (URL withheld)`);
+    return;
+  }
+  result.url=r.url;
   try {
     let response=await fetch(r.url,{method:'HEAD',redirect:'follow',signal:AbortSignal.timeout(20000)});
     if ([405,501].includes(response.status)) {response=await fetch(r.url,{method:'GET',redirect:'follow',signal:AbortSignal.timeout(20000)});await response.body?.cancel();}
