@@ -1,6 +1,3 @@
-- resource_id: tarosay-uiap-hid-web
-  added_at: 2026-10-06
-  reason_ja: 元ページ確認済み。次回のWeekly Picksで新着と比較し、対象読者・製品・分野の多様性を考慮する。
 - resource_id: tarosay-urb-gallery
   added_at: 2026-10-06
   reason_ja: 元ページ確認済み。次回のWeekly Picksで新着と比較し、対象読者・製品・分野の多様性を考慮する。
@@ -13,6 +10,9 @@
 - resource_id: tarosay-sdlog-uiapduino
   added_at: 2026-10-06
   reason_ja: 元ページ確認済み。次回のWeekly Picksで新着と比較し、対象読者・製品・分野の多様性を考慮する。
+- resource_id: papico-uiapduino-usb-write-error
+  added_at: 2026-10-18
+  reason_ja: 投稿者が試したUSB書き込みエラーの切り分け案を保存。原因は未特定で、公式資料との重複や読者への実用性を今後比較する。
 - resource_id: tarosay-board-manager-files
   added_at: 2026-10-06
   reason_ja: 元ページ確認済み。次回のWeekly Picksで新着と比較し、対象読者・製品・分野の多様性を考慮する。
