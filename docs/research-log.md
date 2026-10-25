@@ -97,6 +97,7 @@ Googleで上記の英語クエリ、国内サービス指定、製品名検索�
 - 検索語：`UIAPduino project October 2026 new build`、`UIAPduino CH32V003 site:github.com October 2026`、`UIAPduino site:youtube.com after:2026-10-18`、`UIAPduino site:qiita.com OR site:zenn.dev OR site:note.com after:2026-10-18`、`site:connpass.com UIAPduino 2026 October workshop`、`UIAPduino Pro Micro CH32V006 OR Tiny CH32 Pad Lite after:2026-10-18`、`"Snake-on-eInk" UIAPduino GitHub Open-EP`。英語検索を含む。
 - RISC-V Internationalの2026-10-09記事本文を確認。Open-EP Communityの電子ペーパーをUIAPduino Pro Micro CH32V003で駆動し、フレームバッファや描画ライブラリを使わず画素を計算してSPIへ出力する例を確認。LinkedInの公開投稿本文とも照合。
 - jh4vajのUFSS01記事を再確認。CH32V003 V1.4向け実験ボードの部品、回路、使い方、製作工程と、経験者向けとの対象読者の説明を確認。価格・在庫は記録しない。
+- BOOTHの「290円マイコン日記 Lv.2」公開商品ページの説明と目次を確認。USBキーボード、74HC165、PWM、電子ペーパーなど複数の体験記を含むが、今週の電子ペーパー記事と一部題材が重なるため、読み物・教育候補として保存。価格・在庫は保存しない。
 - 10月31日のCoderDojo末広町UIAPduino体験会は、一覧にイベント名と日付が掲載されている一方、個別ConnpassページがHTTP 202（アクセス制限）となり本文を確認できず、候補登録・推薦に使用しなかった。
 - note、Qiita、Zenn、GitHub、YouTube、公開SNS、イベント、Shopを指定語で検索。noteのLチカまとめは10月18日版に掲載された教材と重なるため除外。検索で出たYouTube内容は個別確認できず採用していない。公開SNS全投稿、全Shop商品ページの網羅確認はしていない。
 

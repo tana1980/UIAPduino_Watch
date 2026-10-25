@@ -1800,3 +1800,29 @@
   verification:
     checked_url: https://www.linkedin.com/pulse/week-risc-v-october-9-2026-risc-v-international-wpwvc
     note: 公開記事の2026-10-09掲載本文を確認。UIAPduino Pro Micro、CH32V003、2KB SRAM、フレームバッファ・描画ライブラリを使わない電子ペーパー表示の記述を確認。
+- id: kuktonian-uiapduino-diary-lv2
+  title: 290円マイコン日記 Lv.2 for UIAPduino Pro Micro CH32V003
+  url: https://booth.pm/en/items/8877674
+  source: BOOTH
+  author: kuktonian
+  region: Japan
+  language: ja
+  categories:
+    - Article
+    - Education
+    - Shop
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: null
+  discovered_at: 2026-10-25
+  last_checked_at: 2026-10-25
+  summary_ja: UIAPduinoの試行錯誤を扱う体験記の紹介ページ。自作USBキーボード、シフトレジスタ、PWM、電子ペーパーなど複数の題材が並び、うまくいかなかった過程から学びたい読者向けです。
+  tags:
+    - Article
+    - Education
+    - Book
+  official: false
+  status: active
+  verification:
+    checked_url: https://booth.pm/en/items/8877674
+    note: 公開商品ページの説明と目次を確認。体験記としての説明、自作キーボード、74HC165、PWM、電子ペーパー関連の題材を確認。価格・在庫は保存していません。

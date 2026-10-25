@@ -176,3 +176,6 @@
 - resource_id: papico-uiapduino-fft-sensors
   added_at: 2026-10-11
   reason_ja: センサー計測からFFTまでを小容量マイコン上で実装する制作記録。今週は新着のサーボ工作を優先し、技術候補として保持する。
+- resource_id: kuktonian-uiapduino-diary-lv2
+  added_at: 2026-10-25
+  reason_ja: 失敗や試行錯誤を含む複数テーマの体験記。今週は本文を確認できた海外の電子ペーパー事例と実験ボードを優先し、教育・読み物枠として次回以降に比較する。
