@@ -19,3 +19,9 @@
     - kame404-uiapduino-hid-windows
     - papico-uiapduino-servo-projects
     - logiclab-uiapduino-blink
+- date: 2026-10-25
+  kind: weekly
+  intro_ja: 電子ペーパーを省メモリで動かす海外の活用例と、配線を減らして実験できる専用ボードを選びました。今回は本文確認できた良質な情報が2件のため、2件で紹介します。
+  resource_ids:
+    - riscv-international-uiapduino-epaper-eye
+    - jh4vaj-ufss01

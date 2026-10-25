@@ -919,8 +919,8 @@
   products: []
   published_at: null
   discovered_at: 2026-10-06
-  last_checked_at: 2026-10-11
-  summary_ja: UIAPduinoの展示・講義を含む公式イベント記録。2026年10月31日のPicoRubyKaigi 2026 Assembleへの展示協賛など、今後の参加予定を確認できます。
+  last_checked_at: 2026-10-25
+  summary_ja: UIAPduinoの展示・講義を含む公式イベント記録。2026年10月31日のPicoRubyKaigi 2026 Assemble、11月14〜15日のNT名古屋2026、11月22日の電波文化祭7など、今後の参加予定を確認できます。
   tags:
     - Event
     - Education
@@ -928,7 +928,7 @@
   status: active
   verification:
     checked_url: https://www.uiap.jp/event
-    note: 元ページを2026-10-11に確認。2026年10月31日のPicoRubyKaigi 2026 AssembleでUIAPduinoを無償提供する展示協賛の記載を確認。
+    note: 元ページを2026-10-25に確認。PicoRubyKaigi 2026 Assemble（10月31日）、NT名古屋2026（11月14〜15日）、電波文化祭7（11月22日）の掲載を確認。開催情報は変更される可能性があります。
 - id: official-uiap-devices
   title: UIAP公式の設計データ・アプリケーション集
   url: https://github.com/YuukiUmeta-UIAP/UIAP-Devices
@@ -1746,14 +1746,14 @@
   products: [UIAPduino Pro Micro CH32V003]
   published_at: 2026-05-19
   discovered_at: 2026-10-13
-  last_checked_at: 2026-10-13
+  last_checked_at: 2026-10-25
   summary_ja: UIAPduino Pro Micro CH32V003 V1.4向けの実験ボード。スイッチ、LED、可変抵抗などを載せ、回路と組み立て方を公開しています。作者は電子工作の経験者向けと説明しています。
   tags: [Hardware, Project]
   official: false
   status: active
   verification:
     checked_url: https://www.jh4vaj.com/ufss01
-    note: 公開記事本文を確認。回路、部品、組み立て、頒布案内と対象読者の記述を確認。
+    note: 公開記事本文を2026-10-25に再確認。回路、部品、組み立て、実験例と経験者向けとの対象読者の記述を確認。価格・在庫は保存していません。
 - id: papico-uiapduino-servo-projects
   title: UIAPduinoとサーボモータの工作記録（X投稿まとめ）
   url: https://note.com/papico_2020/n/n9c2c80ee46e3
@@ -1773,3 +1773,30 @@
   verification:
     checked_url: https://note.com/papico_2020/n/n9c2c80ee46e3
     note: 公開記事本文を確認。サーボによる改札機とプラレール分岐、厚紙試作と干渉確認の記述を確認。
+- id: riscv-international-uiapduino-epaper-eye
+  title: UIAPduinoで駆動する電子ペーパーのまばたき目
+  url: https://www.linkedin.com/pulse/week-risc-v-october-9-2026-risc-v-international-wpwvc
+  source: LinkedIn
+  author: RISC-V International
+  region: Global
+  language: en
+  categories:
+    - Article
+    - Project
+    - Hardware
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: 2026-10-09
+  discovered_at: 2026-10-25
+  last_checked_at: 2026-10-25
+  summary_ja: Open-EP Communityの電子ペーパー作品をUIAPduino Pro Micro CH32V003で動かした事例。フレームバッファや描画ライブラリを使わず、画素を整数演算で算出してSPIへ送り、限られたメモリで表示する工夫が紹介されています。
+  tags:
+    - Article
+    - Project
+    - E-Paper
+    - RISC-V
+  official: false
+  status: active
+  verification:
+    checked_url: https://www.linkedin.com/pulse/week-risc-v-october-9-2026-risc-v-international-wpwvc
+    note: 公開記事の2026-10-09掲載本文を確認。UIAPduino Pro Micro、CH32V003、2KB SRAM、フレームバッファ・描画ライブラリを使わない電子ペーパー表示の記述を確認。
