@@ -179,3 +179,6 @@
 - resource_id: kuktonian-uiapduino-diary-lv2
   added_at: 2026-10-25
   reason_ja: 失敗や試行錯誤を含む複数テーマの体験記。今週は本文を確認できた海外の電子ペーパー事例と実験ボードを優先し、教育・読み物枠として次回以降に比較する。
+- resource_id: switchscience-uiapduino-cp2102n
+  added_at: 2026-10-25
+  reason_ja: UIAPduinoのピン配置に合うUSBシリアル変換モジュール。今週は分野の異なる制作例と実験ボードを優先し、シリアル接続用途の価値を次回以降に比較する。

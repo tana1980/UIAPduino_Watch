@@ -1826,3 +1826,28 @@
   verification:
     checked_url: https://booth.pm/en/items/8877674
     note: 公開商品ページの説明と目次を確認。体験記としての説明、自作キーボード、74HC165、PWM、電子ペーパー関連の題材を確認。価格・在庫は保存していません。
+- id: switchscience-uiapduino-cp2102n
+  title: UIAPduino対応 CP2102N搭載 小型USBシリアル変換モジュール
+  url: https://www.switch-science.com/collections/marketplace/products/11316
+  source: Switch Science Marketplace
+  author: null
+  region: Japan
+  language: ja
+  categories:
+    - Shop
+    - Hardware
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: 2026-07-14
+  discovered_at: 2026-10-25
+  last_checked_at: 2026-10-25
+  summary_ja: UIAPduino Pro Micro CH32V003 V1.4のピン配置に対応するUSBシリアル変換モジュール。TXD・RXD・GNDを接続してシリアル通信を確認したい利用者に便利な選択肢です。
+  tags:
+    - Shop
+    - Hardware
+    - USB-Serial
+  official: false
+  status: active
+  verification:
+    checked_url: https://www.switch-science.com/collections/marketplace/products/11316
+    note: 公開商品ページ本文を確認。CP2102N、USB Type-C、3.3V I/O、UIAPduino V1.4のピン配置への対応を確認。価格・在庫は保存していません。
