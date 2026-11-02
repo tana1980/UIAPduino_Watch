@@ -6,6 +6,13 @@
 
 # Changelog
 
+## Weekly update — 2026-11-01
+
+- QiitaのOLEDゲーム機制作記事とCoderDojo Japanの寄贈記事を追加し、公式イベント案内を再確認。
+- Weekly Picksは新しいゲーム制作、センサー・FFTの技術記録、子ども向けC++教材の3件。寄贈記事は教育コミュニティ候補として保存。
+- センサー・FFT記事と子ども向け体験教材を候補一覧から推薦履歴へ移動。
+
+
 ## Weekly update — 2026-10-18
 
 - WindowsでのUSB HID開発手順、初心者向けLED点滅教材、UIAPduino用実験ボード、サーボを使った制作記録を追加。

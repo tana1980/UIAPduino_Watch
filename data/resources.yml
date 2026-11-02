@@ -919,8 +919,8 @@
   products: []
   published_at: null
   discovered_at: 2026-10-06
-  last_checked_at: 2026-10-11
-  summary_ja: UIAPduinoの展示・講義を含む公式イベント記録。2026年10月31日のPicoRubyKaigi 2026 Assembleへの展示協賛など、今後の参加予定を確認できます。
+  last_checked_at: 2026-11-01
+  summary_ja: UIAPduinoの展示・講義を含む公式イベント記録。2026年11月14〜15日のNT名古屋2026、11月22日の電波文化祭7など、今後の参加予定を確認できます。
   tags:
     - Event
     - Education
@@ -928,7 +928,7 @@
   status: active
   verification:
     checked_url: https://www.uiap.jp/event
-    note: 元ページを2026-10-11に確認。2026年10月31日のPicoRubyKaigi 2026 AssembleでUIAPduinoを無償提供する展示協賛の記載を確認。
+    note: 元ページを2026-11-01に確認。2026年11月14〜15日のNT名古屋2026、11月22日の電波文化祭7の展示協賛予定を確認。PicoRubyKaigiの予定は実行日より前のため、現行予定として扱っていません。
 - id: official-uiap-devices
   title: UIAP公式の設計データ・アプリケーション集
   url: https://github.com/YuukiUmeta-UIAP/UIAP-Devices
@@ -1773,3 +1773,55 @@
   verification:
     checked_url: https://note.com/papico_2020/n/n9c2c80ee46e3
     note: 公開記事本文を確認。サーボによる改札機とプラレール分岐、厚紙試作と干渉確認の記述を確認。
+- id: qiita-uiapduino-mini-game-swest
+  title: ものづくりイベントで出会った UIAPduino でゲーム機を作る
+  url: https://qiita.com/mnishiguchi/items/a8878d925e520c094fbd
+  source: Qiita
+  author: mnishiguchi
+  region: Japan
+  language: ja
+  categories:
+    - Article
+    - Project
+    - Tutorial
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: 2026-10-30
+  discovered_at: 2026-11-01
+  last_checked_at: 2026-11-01
+  summary_ja: UIAPduino Pro Micro CH32V003 V1.4でOLED・3ボタンのゲームをブレッドボード上に作る記録。配線やコード、2KB SRAMで描画を分割する工夫を確認できます。記事では小型スピーカーのGPIO直結を推奨していません。
+  tags:
+    - Article
+    - Project
+    - Tutorial
+    - Game
+  official: false
+  status: active
+  verification:
+    checked_url: https://qiita.com/mnishiguchi/items/a8878d925e520c094fbd
+    note: 公開記事本文を2026-11-01に確認。128×64 OLED、3ボタン、ブレッドボード構成、128バイト単位の描画、配線・スケッチのリンクを確認。スピーカーのGPIO直結は記事内で推奨されていないため、その点を要約に反映。
+- id: coderdojo-uiapduino-donation
+  title: 450台のUIAPduinoボードを全国のCoderDojo向けに寄贈
+  url: https://news.coderdojo.jp/2026/08/10/450-uiapduino-to-coderdojo/
+  source: CoderDojo Japan
+  author: null
+  region: Japan
+  language: ja
+  categories:
+    - Article
+    - Education
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: 2026-08-10
+  discovered_at: 2026-11-01
+  last_checked_at: 2026-11-01
+  summary_ja: UIAPduinoを全国のCoderDojoへ計450台寄贈した教育コミュニティの取り組み。受け取り希望の募集と発送の概要が紹介され、子ども向けプログラミング活動で実機教材を活用する運営者の参考になります。
+  tags:
+    - Article
+    - Education
+    - Community
+  official: false
+  status: active
+  verification:
+    checked_url: https://news.coderdojo.jp/2026/08/10/450-uiapduino-to-coderdojo/
+    note: 公開記事本文を2026-11-01に確認。計450台の寄贈と、希望を募った後に各地の道場へ発送した概要を確認。個人の連絡先や受取先の詳細は転載していません。

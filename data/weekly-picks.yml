@@ -19,3 +19,10 @@
     - kame404-uiapduino-hid-windows
     - papico-uiapduino-servo-projects
     - logiclab-uiapduino-blink
+- date: 2026-11-01
+  kind: weekly
+  intro_ja: OLEDゲーム機の制作例、小容量マイコンでのセンサー解析、子ども向けC++教材から、制作・技術・教育の3件を選びました。
+  resource_ids:
+    - qiita-uiapduino-mini-game-swest
+    - papico-uiapduino-fft-sensors
+    - taikiishii-uiapduino-workshop
