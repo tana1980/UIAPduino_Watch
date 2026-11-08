@@ -1825,3 +1825,32 @@
   verification:
     checked_url: https://news.coderdojo.jp/2026/08/10/450-uiapduino-to-coderdojo/
     note: 公開記事本文を2026-11-01に確認。計450台の寄贈と、希望を募った後に各地の道場へ発送した概要を確認。個人の連絡先や受取先の詳細は転載していません。
+- id: zenn-urb-block-v1-3-assembly
+  title: UIAPduinoでRubyを動かすためのEEPROM基板 ― URB Block v1.3の組み立て方
+  url: https://zenn.dev/tarosay/articles/urb-block-v1-3-assembly
+  source: Zenn
+  author: tarosay
+  region: Japan
+  language: ja
+  categories:
+    - Article
+    - Tutorial
+    - Hardware
+    - Education
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: 2026-11-02
+  discovered_at: 2026-11-08
+  last_checked_at: 2026-11-08
+  summary_ja: UIAPduinoでRubyを動かすためのURB Block v1.3 EEPROM基板について、部品、基板の重ね方、ヘッダピンのはんだ付け、接続方向、I2C端子の確認を写真付きで説明する組み立てガイド。初めて基板を組み立てる読者が、配線と短絡確認の要点を確認するのに役立ちます。
+  tags:
+    - Article
+    - Tutorial
+    - Hardware
+    - EEPROM
+    - Ruby
+  official: false
+  status: active
+  verification:
+    checked_url: https://zenn.dev/tarosay/articles/urb-block-v1-3-assembly
+    note: 2026-11-08に公式記事本文を確認。URB Block v1.3の用途、必要部品、1.0mm厚基板、ヘッダピンのはんだ付け、UIAPduinoとの接続方向、SDA/SCL端子、短絡確認の説明を確認。既存のURB Block Lab投稿まとめとはURL・公開日・主題が異なり、本件は組み立て手順に限定して紹介する。
