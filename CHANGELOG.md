@@ -1,3 +1,9 @@
+## Weekly update — 2026-11-08
+
+- ZennのURB Block v1.3 EEPROM基板組み立てガイドを追加。
+- Weekly Picksに組み立て手順の1件を掲載。既存のURB Block Lab総括記事との重複を説明し、別テーマとして整理。
+- 公式本文確認、重複確認、候補一覧との整合性を記録。
+
 ## Weekly update — 2026-10-11
 
 - WebHID活用記事とZephyr/NCSボード資料を追加し、Zenn記事の最新内容と公式イベント情報を更新。
