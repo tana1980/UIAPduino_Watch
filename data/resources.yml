@@ -1854,3 +1854,135 @@
   verification:
     checked_url: https://zenn.dev/tarosay/articles/urb-block-v1-3-assembly
     note: 2026-11-08に公式記事本文を確認。URB Block v1.3の用途、必要部品、1.0mm厚基板、ヘッダピンのはんだ付け、UIAPduinoとの接続方向、SDA/SCL端子、短絡確認の説明を確認。既存のURB Block Lab投稿まとめとはURL・公開日・主題が異なり、本件は組み立て手順に限定して紹介する。
+- id: cutteeworks-softcream-fan
+  title: ソフトクリームファン：PWMファンとテーマ曲の工作
+  url: https://github.com/CuteeWorks/SoftCreamFan
+  source: GitHub
+  author: CuteeWorks
+  region: Japan
+  language: ja
+  categories:
+    - GitHub
+    - Project
+    - Hardware
+    - Education
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: 2026-10-03
+  discovered_at: 2026-10-18
+  last_checked_at: 2026-10-18
+  summary_ja: ソフトクリーム型筐体の小型ファンをUIAPduinoでPWM制御し、音楽再生も組み合わせた工作作品。回路図・基板データ・筐体資料・プログラムが公開され、ワークショップ教材としても参考になります。
+  tags:
+    - GitHub
+    - Project
+    - PWM
+    - Workshop
+  official: false
+  status: active
+  verification:
+    checked_url: https://github.com/CuteeWorks/SoftCreamFan
+    note: READMEと公開ファイル構成を確認。PWM制御、音声再生、回路・基板・筐体資料の記載を確認。実機の独立追試はしていません。
+- id: papico-uiapduino-usb-write-error
+  title: UIAPduinoのUSB書き込みエラーへの対処案
+  url: https://note.com/papico_2020/n/ncce1177e3521
+  source: note
+  author: papico_2020
+  region: Japan
+  language: ja
+  categories:
+    - Article
+    - Tutorial
+    - Documentation
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: 2026-09-28
+  discovered_at: 2026-10-18
+  last_checked_at: 2026-10-18
+  summary_ja: 書き込み時の接続エラーについて、データ通信対応ケーブル、短いケーブル、USBポート変更やハブ利用など投稿者が試した対処をまとめています。原因は特定されていないため、状況を切り分ける参考情報として扱います。
+  tags:
+    - Article
+    - Tutorial
+    - Troubleshooting
+  official: false
+  status: active
+  verification:
+    checked_url: https://note.com/papico_2020/n/ncce1177e3521
+    note: 元ページ本文を確認。投稿者の環境で試した対処案と原因未特定の記述を確認。公式資料にもケーブル・ポート・ハブの注意事項があります。
+- id: riscv-international-uiapduino-epaper-eye
+  title: UIAPduinoで駆動する電子ペーパーのまばたき目
+  url: https://www.linkedin.com/pulse/week-risc-v-october-9-2026-risc-v-international-wpwvc
+  source: LinkedIn
+  author: RISC-V International
+  region: Global
+  language: en
+  categories:
+    - Article
+    - Project
+    - Hardware
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: 2026-10-09
+  discovered_at: 2026-10-25
+  last_checked_at: 2026-10-25
+  summary_ja: Open-EP Communityの電子ペーパー作品をUIAPduino Pro Micro CH32V003で動かした事例。フレームバッファや描画ライブラリを使わず、画素を整数演算で算出してSPIへ送り、限られたメモリで表示する工夫が紹介されています。
+  tags:
+    - Article
+    - Project
+    - E-Paper
+    - RISC-V
+  official: false
+  status: active
+  verification:
+    checked_url: https://www.linkedin.com/pulse/week-risc-v-october-9-2026-risc-v-international-wpwvc
+    note: 公開記事の2026-10-09掲載本文を確認。UIAPduino Pro Micro、CH32V003、2KB SRAM、フレームバッファ・描画ライブラリを使わない電子ペーパー表示の記述を確認。
+- id: kuktonian-uiapduino-diary-lv2
+  title: 290円マイコン日記 Lv.2 for UIAPduino Pro Micro CH32V003
+  url: https://booth.pm/en/items/8877674
+  source: BOOTH
+  author: kuktonian
+  region: Japan
+  language: ja
+  categories:
+    - Article
+    - Education
+    - Shop
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: null
+  discovered_at: 2026-10-25
+  last_checked_at: 2026-10-25
+  summary_ja: UIAPduinoの試行錯誤を扱う体験記の紹介ページ。自作USBキーボード、シフトレジスタ、PWM、電子ペーパーなど複数の題材が並び、うまくいかなかった過程から学びたい読者向けです。
+  tags:
+    - Article
+    - Education
+    - Book
+  official: false
+  status: active
+  verification:
+    checked_url: https://booth.pm/en/items/8877674
+    note: 公開商品ページの説明と目次を確認。体験記としての説明、自作キーボード、74HC165、PWM、電子ペーパー関連の題材を確認。価格・在庫は保存していません。
+- id: switchscience-uiapduino-cp2102n
+  title: UIAPduino対応 CP2102N搭載 小型USBシリアル変換モジュール
+  url: https://www.switch-science.com/collections/marketplace/products/11316
+  source: Switch Science Marketplace
+  author: null
+  region: Japan
+  language: ja
+  categories:
+    - Shop
+    - Hardware
+  products:
+    - UIAPduino Pro Micro CH32V003
+  published_at: 2026-07-14
+  discovered_at: 2026-10-25
+  last_checked_at: 2026-10-25
+  summary_ja: UIAPduino Pro Micro CH32V003 V1.4のピン配置に対応するUSBシリアル変換モジュール。TXD・RXD・GNDを接続してシリアル通信を確認したい利用者に便利な選択肢です。
+  tags:
+    - Shop
+    - Hardware
+    - USB-Serial
+  official: false
+  status: active
+  verification:
+    checked_url: https://www.switch-science.com/collections/marketplace/products/11316
+    note: 公開商品ページ本文を確認。CP2102N、USB Type-C、3.3V I/O、UIAPduino V1.4のピン配置への対応を確認。価格・在庫は保存していません。
