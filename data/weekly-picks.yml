@@ -26,3 +26,8 @@
     - qiita-uiapduino-mini-game-swest
     - papico-uiapduino-fft-sensors
     - taikiishii-uiapduino-workshop
+- date: 2026-11-08
+  kind: weekly
+  intro_ja: Ruby実行環境を支えるEEPROM基板の組み立て手順から、初めてURB Block v1.3を作る人に役立つ1件を選びました。
+  resource_ids:
+    - zenn-urb-block-v1-3-assembly
