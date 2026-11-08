@@ -99,3 +99,11 @@ Googleで上記の英語クエリ、国内サービス指定、製品名検索�
 - 検索語：UIAPduino November 2026 project GitHub、UIAPduino CH32V003 project after 2026-10-25、UIAPduino Qiita/Zenn/note after 2026-10-25、CH32V006 / Tiny CH32 Pad Lite、UIAPduino YouTube October-November 2026、UIAPduino X public post、UIAPduino BOOTH / Switch Science。GitHub、Qiita、Zenn、note、公開SNS、YouTube、イベント、販売ページの公開情報を検索。UIAP公式・Qiita・note・CoderDojo記事の本文は確認した。検索結果が見つからないサービスを「情報なし」と断定せず、全投稿・全商品を網羅したとは扱わない。
 - 未確認範囲：YouTube動画は検索結果・リンクの発見にとどまり再生確認なし。公開SNSの全投稿は確認していない。販売店は商品ページを網羅して再確認していない。記事内のGitHub配線ガイド個別ページはリンク先の取得に失敗し未確認。元記事本文に記載の範囲を超える動作検証・回路安全性の追試はしていない。
 - 選定理由：新着の制作手順と2KB SRAM制約の工夫、センサー信号をFFTまで扱う独立した技術例、子ども向けC++教材を組み合わせ、制作・技術・教育の対象を分けた。寄贈記事は教育・コミュニティ価値がある一方で公開時期が8月のため候補に残した。
+
+## 週次調査記録 — 2026-11-08
+
+- main（2026-11-01の推薦版を含む）と未マージPR #7・#8の変更内容を確認。今回の変更はmainから別ブランチに作成する。
+- Zennの2026-11-02記事「UIAPduinoでRubyを動かすためのEEPROM基板 ― URB Block v1.3の組み立て方」を公式本文で確認。URB Block v1.3の用途、必要部品、基板の重ね方、ヘッダピンのはんだ付け、接続方向、I2C端子、短絡確認を確認した。
+- 既存の「URB Block LabとUIAPduino / WebHIDの最近の投稿まとめ」（2026-10-03）と同じURB/Ruby/UIAPduino周辺だが、URL・公開日・本文の目的が異なる。既存記事は機能・投稿の総括、本件はEEPROM基板の組み立て手順として重複を限定できるため、別リソースとして登録した。
+- Weekly Picksは、既存記事を再掲せず、本件1件のみを追加。良質な情報を3件に水増ししていない。採用済みIDは候補一覧に追加していない。
+- 元記事本文の範囲を超える実機動作・回路安全性の追試は行っていない。記事内の画像・個人連絡先・非公開情報は転載していない。
