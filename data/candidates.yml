@@ -176,3 +176,18 @@
 - resource_id: coderdojo-uiapduino-donation
   added_at: 2026-11-01
   reason_ja: 全国の子ども向けプログラミング活動へ実機を届けた事例。寄贈記事は2026年8月公開で、今週は新しいゲーム制作・技術資料・既存の体験教材を優先し、コミュニティ運営への活用例として今後比較する。
+- resource_id: cutteeworks-softcream-fan
+  added_at: 2026-11-08
+  reason_ja: PR #7の未反映情報を救出。PWMファンと音楽を組み合わせる工作例として次回以降に比較する。
+- resource_id: papico-uiapduino-usb-write-error
+  added_at: 2026-11-08
+  reason_ja: PR #7の未反映候補を救出。投稿者の環境での対処案で原因は未特定。公式手順としては扱わず、推薦前に再確認する。
+- resource_id: riscv-international-uiapduino-epaper-eye
+  added_at: 2026-11-08
+  reason_ja: PR #8の未公開推薦案から候補として救出。省メモリの電子ペーパー表示例として次回以降に比較する。
+- resource_id: kuktonian-uiapduino-diary-lv2
+  added_at: 2026-11-08
+  reason_ja: PR #8の未反映候補を救出。複数の制作題材と試行錯誤を含む体験記として次回以降に比較する。
+- resource_id: switchscience-uiapduino-cp2102n
+  added_at: 2026-11-08
+  reason_ja: PR #8の未反映候補を救出。UIAPduino向けUSBシリアル接続の選択肢として次回以降に比較する。
