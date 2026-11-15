@@ -107,3 +107,15 @@ Googleで上記の英語クエリ、国内サービス指定、製品名検索�
 - 既存の「URB Block LabとUIAPduino / WebHIDの最近の投稿まとめ」（2026-10-03）と同じURB/Ruby/UIAPduino周辺だが、URL・公開日・本文の目的が異なる。既存記事は機能・投稿の総括、本件はEEPROM基板の組み立て手順として重複を限定できるため、別リソースとして登録した。
 - Weekly Picksは、既存記事を再掲せず、本件1件のみを追加。良質な情報を3件に水増ししていない。採用済みIDは候補一覧に追加していない。
 - 元記事本文の範囲を超える実機動作・回路安全性の追試は行っていない。記事内の画像・個人連絡先・非公開情報は転載していない。
+
+## 週次調査記録 — 2026-11-15
+
+- 最新の公開 `main`（569d01e）から作業ブランチを作成。resources、candidates、weekly-picks、README、CHANGELOG、過去の推薦と既存調査記録を照合した。main上の72件のリソース、59件の候補、11月8日までの推薦を確認。
+- UIAP公式シリーズ一覧の日本語・英語本文を再確認。Pro Micro CH32V003 V1.4（GA）、Pro Micro CH32V006 V1.1（Beta）、Tiny CH32 Pad Lite V0.1（Alpha）、CH32V002（準備中）など現在の表示を確認。製品固有名検索に使用した。
+- 検索語：`UIAPduino news project November 2026`、`UIAPduino Pro Micro CH32V003 V1.4 English project tutorial YouTube GitHub 2026`、`UIAPduino event workshop November 2026 shop`、`UIAPduino 2026年11月 X note YouTube Qiita Zenn`、`UIAPduino Pro Micro CH32V006`、`Tiny CH32 Pad Lite`。日本語・英語のWeb検索結果をGitHub、Qiita、Zenn、note、ProtoPedia、公開SNS、YouTube、イベント・ショップ情報と照合した。
+- Zenn「Scratchで覚えたブロックで、もの作りへ」（2026-11-10）を本文確認。UIAPduinoとEEPROM、ブロックからRubyへ進む仕組み、CoderDojoでの使用と改善例を確認。価格記述は登録しなかった。
+- ProtoPedia「部品代400円！SFCコントローラーをUSB-C化してiPhone・iPadで使う」（2026-11-12）およびリンク先GitHub READMEを確認。UIAPduino V1.4の組み込み、USB HID化、配線・ファームウェア・動作確認範囲と制約を確認。本文にある価格は登録しなかった。
+- note「UIAPduinoによるプラレール自動分岐 3Dプリンターで台座製作、ついでにFEM解析」（2026-11-12）を本文確認。FreeCADによる台座設計、PrePoMaxの簡易FEM、3Dプリント後の調整工程を確認。10月に掲載した同一装置のサーボ工作記事とは、新しい機構設計・解析工程に範囲を限って区別した。
+- GitHubの正十二面体キーボードREADMEを確認し、回路接続、3Dモデル、ビルドと書き込み手順があることを確認。今週の3件との分野重複を避け、候補に保存。
+- 選定理由：新着・具体的な実装情報を重視しつつ、教育、USB HID応用、機構設計へ分野を分散。イベントページはConnpass上の本文が取得できず、検索結果からの採用はしない。公式イベント一覧は確認できたが、すでに掲載した総覧ページの再推薦は避けた。
+- 未確認範囲：YouTubeの動画は検索結果と説明文までで再生確認していない。公開SNSの全投稿と全ショップ商品は網羅できていない。Connpassの該当ページは本文取得不可。一般検索は検索エンジンの索引範囲に限られ、全Webの網羅性は主張しない。新規3記事とGitHub READMEは元ページを開いて確認済み。
