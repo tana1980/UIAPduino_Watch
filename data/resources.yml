@@ -1854,3 +1854,79 @@
   verification:
     checked_url: https://zenn.dev/tarosay/articles/urb-block-v1-3-assembly
     note: 2026-11-08に公式記事本文を確認。URB Block v1.3の用途、必要部品、1.0mm厚基板、ヘッダピンのはんだ付け、UIAPduinoとの接続方向、SDA/SCL端子、短絡確認の説明を確認。既存のURB Block Lab投稿まとめとはURL・公開日・主題が異なり、本件は組み立て手順に限定して紹介する。
+- id: zenn-urb-block-scratch-to-making
+  title: Scratchで覚えたブロックで、もの作りへ ― UIAPduinoとEEPROMでRubyも学ぶ
+  url: https://zenn.dev/tarosay/articles/urb-block-scratch-to-making
+  source: Zenn
+  author: tarosay
+  region: Japan
+  language: ja
+  categories: [Article, Tutorial, Education, Project]
+  products: [UIAPduino Pro Micro CH32V003]
+  published_at: 2026-11-10
+  discovered_at: 2026-11-15
+  last_checked_at: 2026-11-15
+  summary_ja: UIAPduinoとI2C EEPROMにプログラムを保存し、PCを外しても動かすブロック型の学習環境を紹介。ブロックからRubyへ進む流れや、CoderDojoで子どもが使った際の改善例があり、教室での導入や電子工作を学び始める人に役立ちます。
+  tags: [Scratch, Ruby, 電子工作, 教育]
+  official: false
+  status: active
+  verification:
+    checked_url: https://zenn.dev/tarosay/articles/urb-block-scratch-to-making
+    note: 2026-11-15に公開記事本文を確認。UIAPduinoとEEPROMの構成、ブロックからRubyへ進む導線、CoderDojoでの使用と改善例を確認。本文中の価格・在庫は収録していない。
+- id: protopedia-snes-controller-uiapduino
+  title: SFCコントローラーをUIAPduinoでUSB HIDキーボード化
+  url: https://protopedia.net/prototype/10362
+  source: ProtoPedia
+  author: OT×ITの実装屋
+  region: Japan
+  language: ja
+  categories: [Article, Project, Hardware, Tutorial]
+  products: [UIAPduino Pro Micro CH32V003]
+  published_at: 2026-11-12
+  discovered_at: 2026-11-15
+  last_checked_at: 2026-11-15
+  summary_ja: SFCコントローラーにUIAPduinoを組み込み、USB HIDキーボードとしてiPhone・iPadのDeltaで使う制作例。配線表、ファームウェア、確認環境と既知の制約が公開され、レトロゲーム入力機器の改造やHID制作の参考になります。
+  tags: [USB HID, ゲーム, 電子工作]
+  official: false
+  status: active
+  verification:
+    checked_url: https://protopedia.net/prototype/10362
+    note: 2026-11-15に作品ページとリンク先の公開GitHub READMEを確認。UIAPduino V1.4、配線・ファームウェア、対応環境および制約の記載を確認。記事記載の価格は収録していない。
+- id: papico-uiapduino-plarail-3d-fem
+  title: UIAPduinoのプラレール自動分岐を3DプリントとFEMで改良
+  url: https://note.com/papico_2020/n/neacf438aff73
+  source: note
+  author: papico_2020
+  region: Japan
+  language: ja
+  categories: [Article, Project, Hardware]
+  products: []
+  published_at: 2026-11-12
+  discovered_at: 2026-11-15
+  last_checked_at: 2026-11-15
+  summary_ja: サーボで動かすプラレール自動分岐装置の台座を、厚紙試作からFreeCADと3Dプリンターで作り直す記録。PrePoMaxで簡易FEM解析を行い、板厚を調整した工程も紹介しており、電子工作に機構設計を組み合わせたい人に役立ちます。
+  tags: [プラレール, サーボ, FreeCAD, 3Dプリント, FEM]
+  official: false
+  status: active
+  verification:
+    checked_url: https://note.com/papico_2020/n/neacf438aff73
+    note: 2026-11-15に公開記事本文を確認。FreeCADでの形状修正、PrePoMaxによる簡易解析、3Dプリント台座で分岐装置を改良した経過を確認。既掲載のサーボ工作記事とは、今回は新たな台座設計・解析工程に範囲を限定して紹介する。
+- id: gangi-man-dodecahedron-keyboard-uiapduino
+  title: UIAPduinoで作る正十二面体キーボード
+  url: https://github.com/gangi-man/Dodecahedron-keyboard-on-UIAPduino
+  source: GitHub
+  author: gangi-man
+  region: Japan
+  language: ja
+  categories: [GitHub, Project, Hardware]
+  products: []
+  published_at: null
+  discovered_at: 2026-11-15
+  last_checked_at: 2026-11-15
+  summary_ja: UIAPduinoを使った正十二面体形状のUSBキーボード。公開READMEにキースイッチの接続、3Dモデル、ch32funとWCH-LinkEを使うビルド・書き込み手順があり、独特な入力機器の自作に関心がある人向けです。
+  tags: [キーボード, USB, 3Dプリント]
+  official: false
+  status: active
+  verification:
+    checked_url: https://github.com/gangi-man/Dodecahedron-keyboard-on-UIAPduino
+    note: 2026-11-15に公開リポジトリのREADMEを確認。正十二面体USBキーボードの説明、回路接続、3Dモデル、ビルドと書き込み手順を確認。

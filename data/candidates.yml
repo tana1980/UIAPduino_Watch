@@ -176,3 +176,6 @@
 - resource_id: coderdojo-uiapduino-donation
   added_at: 2026-11-01
   reason_ja: 全国の子ども向けプログラミング活動へ実機を届けた事例。寄贈記事は2026年8月公開で、今週は新しいゲーム制作・技術資料・既存の体験教材を優先し、コミュニティ運営への活用例として今後比較する。
+- resource_id: gangi-man-dodecahedron-keyboard-uiapduino
+  added_at: 2026-11-15
+  reason_ja: 正十二面体のUSBキーボードという独自性があり、公開READMEに回路・3Dモデル・ビルド手順が揃う。今週は教育、iPhone/iPad向けHID、機構設計の新しい記事を優先したため、次回以降に比較する。

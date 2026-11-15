@@ -31,3 +31,10 @@
   intro_ja: Ruby実行環境を支えるEEPROM基板の組み立て手順から、初めてURB Block v1.3を作る人に役立つ1件を選びました。
   resource_ids:
     - zenn-urb-block-v1-3-assembly
+- date: 2026-11-15
+  kind: weekly
+  intro_ja: ブロックからRubyへ進む教材、SFCコントローラーのUSB HID化、プラレール分岐装置の3D設計と解析から、教育・制作・機構設計の3件を選びました。
+  resource_ids:
+    - zenn-urb-block-scratch-to-making
+    - protopedia-snes-controller-uiapduino
+    - papico-uiapduino-plarail-3d-fem
