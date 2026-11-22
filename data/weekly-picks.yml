@@ -38,3 +38,8 @@
     - zenn-urb-block-scratch-to-making
     - protopedia-snes-controller-uiapduino
     - papico-uiapduino-plarail-3d-fem
+- date: 2026-11-22
+  kind: weekly
+  intro_ja: 正十二面体の立体キーボード制作例から、UIAPduinoを使った独自の入力デバイスづくりを紹介します。
+  resource_ids:
+    - gangi-man-dodecahedron-keyboard-uiapduino
