@@ -38,3 +38,9 @@
     - zenn-urb-block-scratch-to-making
     - protopedia-snes-controller-uiapduino
     - papico-uiapduino-plarail-3d-fem
+- date: 2026-11-22
+  kind: weekly
+  intro_ja: PWMで動く小型ファンと、立体的なUSBキーボード。UIAPduinoを入力と出力の異なる工作に使った2件を紹介します。
+  resource_ids:
+    - protopedia-soft-cream-fan-uiapduino
+    - gangi-man-dodecahedron-keyboard-uiapduino
