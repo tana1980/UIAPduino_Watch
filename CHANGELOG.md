@@ -12,6 +12,11 @@
 
 # Changelog
 
+## Weekly update — 2026-11-22
+
+- ProtoPediaの小型ファン作品を追加し、保存済みの正十二面体キーボード候補とともにWeekly Picksへ掲載。
+- 元ページを確認できた独立した工作例を2件選定。イベント候補は本文の取得が不十分なため掲載を保留。
+
 ## Weekly update — 2026-11-01
 
 - QiitaのOLEDゲーム機制作記事とCoderDojo Japanの寄贈記事を追加し、公式イベント案内を再確認。

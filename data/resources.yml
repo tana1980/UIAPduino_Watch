@@ -1930,3 +1930,22 @@
   verification:
     checked_url: https://github.com/gangi-man/Dodecahedron-keyboard-on-UIAPduino
     note: 2026-11-15に公開リポジトリのREADMEを確認。正十二面体USBキーボードの説明、回路接続、3Dモデル、ビルドと書き込み手順を確認。
+- id: protopedia-soft-cream-fan-uiapduino
+  title: ソフトクリームファン
+  url: https://protopedia.net/prototype/9737
+  source: ProtoPedia
+  author: CuteeWorks
+  region: Japan
+  language: ja
+  categories: [Project, Hardware]
+  products: [UIAPduino Pro Micro CH32V003]
+  published_at: 2026-10-03
+  discovered_at: 2026-11-22
+  last_checked_at: 2026-11-22
+  summary_ja: ソフトクリーム型の小型ファン。UIAPduinoでモーターをPWM制御し、低速回転させる制作例です。作品ページから公開リポジトリも参照できます。
+  tags: [PWM, モーター, 電子工作]
+  official: false
+  status: active
+  verification:
+    checked_url: https://protopedia.net/prototype/9737
+    note: 公開作品ページの概要、使用デバイス、公開日、GitHubリンクを確認。実機動作と動画内容は未確認。
