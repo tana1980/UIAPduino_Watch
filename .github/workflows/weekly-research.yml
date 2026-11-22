@@ -35,6 +35,8 @@ jobs:
           echo "name=$branch" >> "$GITHUB_OUTPUT"
 
       - name: Run Gemini CLI
+        env:
+          GEMINI_CLI_TRUST_WORKSPACE: "true"
         uses: google-github-actions/run-gemini-cli@v0.1.22
         with:
           gemini_api_key: ${{ secrets.GEMINI_API_KEY }}
