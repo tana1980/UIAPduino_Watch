@@ -2,68 +2,159 @@ name: Weekly research update
 
 on:
   workflow_dispatch:
-  schedule:
-    # Sunday 20:17 JST (11:17 UTC)
-    - cron: "17 11 * * 0"
+    inputs:
+      dry_run:
+        description: 検証結果のみ記録する
+        type: boolean
+        default: false
+  # 両サイトの手動試験とPMO引継ぎを確認後、別PRで有効化。
+  # schedule:
+  #   - cron: "17 11 * * 0"
 
-permissions:
-  contents: write
-  pull-requests: write
+permissions: {}
 
 concurrency:
   group: weekly-research
   cancel-in-progress: false
 
+env:
+  PYTHONDONTWRITEBYTECODE: '1'
+  ASTRO_TELEMETRY_DISABLED: '1'
+
 jobs:
-  update:
-    runs-on: ubuntu-latest
-    timeout-minutes: 30
+  research:
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/automation/weekly-watch-pilot'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    permissions:
+      contents: read
+      pull-requests: read
+    outputs:
+      changed: ${{ steps.pack.outputs.changed }}
+      sha: ${{ steps.pack.outputs.sha }}
+      base: ${{ steps.scan.outputs.base }}
+      day: ${{ steps.scan.outputs.day }}
+      snapshot: ${{ steps.scan.outputs.snapshot }}
     steps:
-      - name: Checkout main
-        uses: actions/checkout@v4
+      - name: Check out reviewed implementation
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
         with:
-          fetch-depth: 0
+          ref: ${{ github.sha }}
+          path: implementation
+          persist-credentials: false
+      - name: Check out latest main data
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+        with:
           ref: main
-
-      - name: Create isolated update branch
-        id: branch
-        shell: bash
-        run: |
-          set -euo pipefail
-          branch="automation/weekly-research-${GITHUB_RUN_ID}"
-          git switch --create "$branch"
-          echo "name=$branch" >> "$GITHUB_OUTPUT"
-
-      - name: Run Gemini CLI
-        env:
-          GEMINI_CLI_TRUST_WORKSPACE: "true"
-        uses: google-github-actions/run-gemini-cli@v0.1.22
-        with:
-          gemini_api_key: ${{ secrets.GEMINI_API_KEY }}
-          gemini_model: gemini-3.5-flash-lite
-          prompt: |
-            Read AGENTS.md and README.md first. Perform this week's research update
-            for UIAPduino Watch. Follow the repository's verification, duplicate-check,
-            source-attribution, and privacy rules exactly. Update only the curated data,
-            research log, and changelog files when a genuinely useful verified update
-            exists. Do not publish, modify workflow files, expose secrets, or change
-            repository settings. Run npm run validate, npm test, and npm run build.
-            If there is no verified useful update, leave the working tree unchanged.
-
-      - name: Create pull request only when changed
+          path: catalog
+          persist-credentials: false
+      - name: Inspect main and all pending data proposals
+        id: scan
+        working-directory: catalog
         env:
           GH_TOKEN: ${{ github.token }}
-          BRANCH: ${{ steps.branch.outputs.name }}
-        shell: bash
+          WATCH_PENDING: ${{ runner.temp }}/watch-pending.txt
         run: |
-          set -euo pipefail
-          if git diff --quiet && git diff --cached --quiet; then
-            echo "No changes; no PR will be created."
-            exit 0
-          fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data docs CHANGELOG.md
-          git commit -m "chore: weekly research update"
-          git push --set-upstream origin "$BRANCH"
-          gh pr create --base main --head "$BRANCH"             --title "Weekly research update"             --body "Automated research proposal. Review sources, duplicates, validation output, and public-content safety before merging."
+          python3 ../implementation/.github/watch/gate.py scan
+      - name: Set up Node
+        if: steps.scan.outputs.ready == 'true'
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: '24.22.3'
+      - name: Prepare pilot adapter against main
+        if: steps.scan.outputs.ready == 'true'
+        working-directory: catalog
+        run: |
+          mkdir -p .github/watch
+          cp -a ../implementation/.github/watch/. .github/watch/
+          git add -f -- .github/watch
+          git write-tree > "$RUNNER_TEMP/watch-index"
+          npm ci --ignore-scripts --no-audit --no-fund
+      - name: Research primary sources
+        if: steps.scan.outputs.ready == 'true'
+        working-directory: catalog
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          WATCH_DATE: ${{ steps.scan.outputs.day }}
+          WATCH_PENDING: ${{ runner.temp }}/watch-pending.txt
+          WATCH_RECORDS: ${{ runner.temp }}/watch-records.json
+        run: python3 .github/watch/discover.py
+      - name: Apply verified records
+        if: steps.scan.outputs.ready == 'true'
+        working-directory: catalog
+        env:
+          WATCH_DATE: ${{ steps.scan.outputs.day }}
+          WATCH_PENDING: ${{ runner.temp }}/watch-pending.txt
+          WATCH_RECORDS: ${{ runner.temp }}/watch-records.json
+        run: node .github/watch/apply.mjs
+      - name: Validate data and build Pages
+        if: steps.scan.outputs.ready == 'true'
+        working-directory: catalog
+        run: |
+          npm run validate
+          npm test
+          npm run build
+      - name: Package validated data changes
+        if: steps.scan.outputs.ready == 'true'
+        working-directory: catalog
+        id: pack
+        run: |
+          test "$(git write-tree)" = "$(cat "$RUNNER_TEMP/watch-index")"
+          python3 ../implementation/.github/watch/gate.py pack "$RUNNER_TEMP/weekly.patch"
+      - name: Transfer validated patch
+        if: steps.pack.outputs.changed == 'true' && !inputs.dry_run
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: weekly-patch-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/weekly.patch
+          retention-days: 1
+          if-no-files-found: error
+      - name: Record research result
+        if: always()
+        env:
+          RESULT: ${{ job.status }}
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: |
+          echo "調査・検証ジョブ $RESULT / dry_run=$DRY_RUN。詳細は各ステップのログを参照してください。" >> "$GITHUB_STEP_SUMMARY"
+
+  propose:
+    needs: research
+    if: needs.research.outputs.changed == 'true' && !inputs.dry_run
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Check out reviewed publisher
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+        with:
+          ref: ${{ github.sha }}
+          path: implementation
+          persist-credentials: false
+      - name: Check out validated base
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+        with:
+          ref: ${{ needs.research.outputs.base }}
+          fetch-depth: 2
+          path: catalog
+          persist-credentials: false
+      - name: Receive validated patch
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
+        with:
+          name: weekly-patch-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/verified
+      - name: Recheck PR queue and open a review
+        working-directory: catalog
+        env:
+          GH_TOKEN: ${{ github.token }}
+          WATCH_DATE: ${{ needs.research.outputs.day }}
+          WATCH_BASE: ${{ needs.research.outputs.base }}
+          WATCH_SHA: ${{ needs.research.outputs.sha }}
+          WATCH_SNAPSHOT: ${{ needs.research.outputs.snapshot }}
+        run: python3 ../implementation/.github/watch/gate.py publish "$RUNNER_TEMP/verified/weekly.patch"
+      - name: Record proposal result
+        if: always()
+        env:
+          RESULT: ${{ job.status }}
+        run: echo "PR作成ジョブ $RESULT。失敗時は該当ステップを確認してください。" >> "$GITHUB_STEP_SUMMARY"
