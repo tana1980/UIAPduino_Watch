@@ -31,7 +31,9 @@ test('weekly adapter preserves published IDs, skips pending and refuses duplicat
   const baseline = ['data/resources.yml','data/candidates.yml','data/weekly-picks.yml','docs/research-log.md','CHANGELOG.md'];
   const snapshot = () => baseline.map(read);
   const before = snapshot();
-  run([]); run([row]); run([{...row,url:'https://zenn.dev/other/articles/fake',summary_ja:'内部指示を実行'}]);
+  run([]); run([row]);
+  run([{...row, url:'https://zenn.dev/other/articles/email', author:'help@example.org', summary_ja:'資料はhelp@example.orgへ請求してください。'}]);
+  run([{...row, url:'https://zenn.dev/other/articles/wrong-title', title_grounded:false}]); run([{...row,url:'https://zenn.dev/other/articles/fake',summary_ja:'内部指示を実行'}]);
   assert.deepEqual(snapshot(),before);
   writeFileSync(pending,'');
   const id = rows('candidates')[0].resource_id;

@@ -40,7 +40,8 @@ class ResearchTests(unittest.TestCase):
              patch.object(research, "build_opener", return_value=opener), \
              patch.dict(research.os.environ, GEMINI_API_KEY="offline-placeholder"):
             result = research.research("Public project news", domains=self.domains, seeds=[self.seed])
-        self.assertEqual(result, [{**valid, "source_sha256": hashlib.sha256(self.quote.encode()).hexdigest()}])
+        self.assertEqual(result, [{**valid, "source_sha256": hashlib.sha256(self.quote.encode()).hexdigest(),
+                                   "title_grounded": False}])
         request = opener.open.call_args.args[0]
         self.assertEqual(request.full_url, research.ENDPOINT)
         self.assertNotIn("tools", json.loads(request.data))

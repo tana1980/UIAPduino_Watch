@@ -94,7 +94,26 @@ def queue(day, pending=None):
     return branch, digest.hexdigest(), None
 
 
+def inspect_editorial_context():
+    files = ["README.md", "docs/research-log.md", "CHANGELOG.md",
+             "data/resources.yml", "data/candidates.yml", "data/weekly-picks.yml"]
+    files.extend(path for path in git("ls-files", text=True).splitlines()
+                 if Path(path).name == "AGENTS.md")
+    entries = []
+    for path in files:
+        contents = Path(path).read_bytes()
+        if not contents.strip():
+            raise RuntimeError(f"更新ルールまたは調査記録が空です: {path}")
+        # Only fixed paths and hashes enter the Actions summary; repository text stays local.
+        label = "AGENTS.md" if Path(path).name == "AGENTS.md" else path
+        entries.append(f"{label} ({hashlib.sha256(contents).hexdigest()[:12]})")
+    if not any(Path(path).name == "AGENTS.md" for path in files):
+        entries.append("AGENTS.md は対象mainに未配置")
+    note("照合対象 " + "、".join(entries))
+
+
 def scan():
+    inspect_editorial_context()
     day = datetime.now(ZoneInfo("Asia/Tokyo")).date().isoformat()
     branch, snapshot, hold = queue(day, Path(os.environ["WATCH_PENDING"]))
     output("day", day)

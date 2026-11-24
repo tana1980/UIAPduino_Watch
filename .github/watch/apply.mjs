@@ -20,8 +20,9 @@ const byUrl = new Map(resources.map(r => [canonicalUrl(r.url), r]));
 const picked = new Set(picks.flatMap(p => p.resource_ids));
 const saved = new Set(candidates.map(c => c.resource_id));
 const forbidden = /[<>{}\x00-\x1f\x7f]|https?:|\]\(|ignore (?:all |previous)|system prompt|API[_ ]?KEY|GITHUB_TOKEN|プロンプト|以前の指示|作業メモ|内部指示|秘密鍵/i;
+const privatePattern = /[\w.+-]+@[\w.-]+\.[a-z]{2,}|(?:gh[pousr]_|github_pat_|AIza)[A-Za-z0-9_\-]{10,}|-----BEGIN [A-Z ]*PRIVATE KEY|\bsk-[\w-]{16,}|(?<!\d)0\d{1,4}[-‐]\d{1,4}[-‐]\d{4}(?!\d)/i;
 function plain(value, max) {
-  return typeof value === 'string' && value.trim().length > 0 && value.length <= max && !forbidden.test(value);
+  return typeof value === 'string' && value.trim().length > 0 && value.length <= max && !forbidden.test(value) && !privatePattern.test(value);
 }
 function week(date) {
   const d = new Date(date + 'T12:00:00Z');

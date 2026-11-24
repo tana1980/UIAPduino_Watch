@@ -3,6 +3,7 @@ import hashlib
 import json
 import os
 import re
+import time
 import xml.etree.ElementTree as ET
 from collections import Counter
 from html.parser import HTMLParser
@@ -236,13 +237,21 @@ def research(prompt: str, *, domains, seeds, fields=()):
                                  "maxOutputTokens": 8192}}
     request = Request(ENDPOINT, data=json.dumps(body).encode(),
                       headers={"Content-Type": "application/json", "x-goog-api-key": secret})
-    try:
-        with build_opener(NoRedirect()).open(request, timeout=120) as response:
-            raw = response.read(LIMIT + 1)
-    except HTTPError as error:
-        raise RuntimeError(f"Gemini HTTP {error.code}. Check API key, billing, quota and service status.") from None
-    except (URLError, OSError):
-        raise RuntimeError("Gemini connection failed or timed out") from None
+    for attempt in range(2):
+        try:
+            with build_opener(NoRedirect()).open(request, timeout=120) as response:
+                raw = response.read(LIMIT + 1)
+            break
+        except HTTPError as error:
+            status = error.code
+            error.close()
+            if attempt == 0 and status in {429, 502, 503, 504}:
+                print(f"Gemini HTTP {status}; retrying once after 8 seconds.")
+                time.sleep(8)
+                continue
+            raise RuntimeError(f"Gemini HTTP {status}. Check API key, billing, quota and service status.") from None
+        except (URLError, OSError):
+            raise RuntimeError("Gemini connection failed or timed out") from None
     if len(raw) > LIMIT:
         raise RuntimeError("Gemini response exceeds size limit")
     reply = json.loads(raw)
