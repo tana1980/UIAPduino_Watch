@@ -44,3 +44,10 @@
   resource_ids:
     - protopedia-soft-cream-fan-uiapduino
     - gangi-man-dodecahedron-keyboard-uiapduino
+
+- date: 2026-11-24
+  kind: weekly
+  intro_ja: CH32V006を採用した上位モデルのベータ版に関するハードウェアの仕様やデバッグ手順、注意事項を知るために不可欠な公式情報です。 V003とV006のハードウェアにおけるボタン構成やマイコン制御の違い、AI開発におけるメリットを分かりやすく整理した技術記事です。
+  resource_ids:
+    - official-v006
+    - qiita-v003-v006
