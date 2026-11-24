@@ -82,9 +82,6 @@
 - resource_id: official-series
   added_at: 2026-10-06
   reason_ja: 元ページ確認済み。次回のWeekly Picksで新着と比較し、対象読者・製品・分野の多様性を考慮する。
-- resource_id: official-v006
-  added_at: 2026-10-06
-  reason_ja: 元ページ確認済み。次回のWeekly Picksで新着と比較し、対象読者・製品・分野の多様性を考慮する。
 - resource_id: official-tiny-pad
   added_at: 2026-10-06
   reason_ja: 元ページ確認済み。次回のWeekly Picksで新着と比較し、対象読者・製品・分野の多様性を考慮する。
@@ -145,10 +142,6 @@
 - resource_id: qiita-elixir-v006
   added_at: 2026-10-06
   reason_ja: 元ページ確認済み。次回のWeekly Picksで新着と比較し、対象読者・製品・分野の多様性を考慮する。
-- resource_id: qiita-v003-v006
-  added_at: 2026-10-06
-  reason_ja: 元ページ確認済み。次回のWeekly Picksで新着と比較し、対象読者・製品・分野の多様性を考慮する。
-
 - resource_id: zenn-plarail-blink
   added_at: 2026-10-06
   reason_ja: 元ページ確認済み。次回のWeekly Picksで新着と比較し、対象読者・製品・分野の多様性を考慮する。

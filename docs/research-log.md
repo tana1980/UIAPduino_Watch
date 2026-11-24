@@ -132,3 +132,10 @@ Googleで上記の英語クエリ、国内サービス指定、製品名検索�
 - 公開SNSの全投稿、YouTube動画の再生、ショップの在庫・価格は確認していない。
 - data validationは77 resources、59 candidates、7 editionsで成功。重複URL・必須項目・参照整合性を確認し、13件のテストが成功。一時コピーに依存関係を再導入してbuildとブラウザ検証が成功。元の作業コピーではAstro依存ファイルの読み込みが停滞したため、一時コピーを検証環境にした。
 - 生成した全公開HTMLから抽出した79 URLを確認。78件到達、404/410は0件、不審な別ドメイン転送は0件。nRF ConnectのZephyr資料1件が403で要再確認。HTTP応答の確認は全リンク先本文の再読とは異なる。
+
+## 週次調査記録 — 2026-11-24
+
+- 公式シリーズ・イベント、GitHubトピック、Zenn・Qiita・noteのフィード、ProtoPediaと保存済み候補を対象に巡回。到達範囲はActionsの実行記録を参照。登録済み77件・保存済み候補59件と未マージPRを照合。本文確認が得られた推薦だけを採用。
+- 本文照合後の候補7件。掲載条件外1件、重複4件、他PRで検討中0件。動画・実機動作・ライセンスの独立検証は行っていない。
+- <https://www.uiap.jp/uiapduino/pro-micro/ch32v006/v1dot1> — 本文の照合箇所 `UIAPduino Pro Micro CH32V006 V1.1 Beta`。SHA-256 0566bf8145b1fc4154fba19ce84ad735380ce20b4d0473ab8972c9006fe78215。
+- <https://qiita.com/mnishiguchi/items/68ae0a6f2910dee5470b> — 本文の照合箇所 `UIAPduino Pro Micro CH32V003 を使った開発を体験しました。また、開発`。SHA-256 2997aaf362ab3cf88abcf13e0a186fac47b729fc65e7c78ff7068bb12bb34203。
